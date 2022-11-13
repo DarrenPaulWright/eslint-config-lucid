@@ -1,0 +1,57 @@
+{
+	"name": "eslint-config-lucid",
+	"version": "0.0.0",
+	"description": "A collection of eslint plugins with settings focused on reducing cognitive load and improving readability.",
+	"keywords": [
+		"eslint",
+		"config",
+		"lucid"
+	],
+	"license": "MIT",
+	"author": {
+		"name": "Darren Paul Wright",
+		"email": "Darren@DarrenPaulWright.com",
+		"url": "https://www.darrenpaulwright.com"
+	},
+	"homepage": "https://github.com/DarrenPaulWright/eslint-config-lucid#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DarrenPaulWright/eslint-config-lucid.git"
+	},
+	"bugs": {
+		"url": "https://github.com/DarrenPaulWright/eslint-config-lucid/issues"
+	},
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"test": "eslint * --config eslint.config.js",
+		"preversion": "npm test && npm run docs && git add --all && git diff HEAD --quiet || git commit -m \"Updating docs\"",
+		"postversion": "npm publish",
+		"postpublish": "git push --follow-tags",
+		"pre-clean": "rm -rf node_modules",
+		"clean": "npm run pre-clean && npm install && npm audit fix",
+		"update": "ncu -u && git diff --quiet || npm install && npm audit fix",
+		"update-clean": "npm run pre-clean && npm run update",
+		"update-commit": "npm run update && npm test && git add --all && git diff HEAD --quiet || git commit -m \"Updating dependencies\"",
+		"update-patch": "npm run update && npm test && git add --all && git diff HEAD --quiet || git commit -m \"Updating dependencies\" && npm version patch",
+		"docs": ""
+	},
+	"engines": {
+		"node": "^16.0.0 || >= 18.0.0"
+	},
+	"dependencies": {
+		"@babel/core": "^7.20.2",
+		"@babel/eslint-parser": "^7.19.1",
+		"eslint-plugin-babel": "^5.3.1",
+		"eslint-plugin-unicorn": "^44.0.2"
+	},
+	"devDependencies": {
+		"@eslint/eslintrc": "^1.3.3",
+		"eslint": "^8.27.0",
+		"eslint-plugin-eslint-config": "^2.0.0",
+		"eslint-plugin-node": "^11.1.0"
+	},
+	"peerDependencies": {
+		"eslint": ">=8.27.0"
+	}
+}
