@@ -1,0 +1,5 @@
+| Rule | Value | Description |
+| --- | --- | --- |
+{{#children inherited=undefined ~}}
+	| {{name}} | {{properties.0.defaultvalue}} | {{#if description}}{{{stripNewlines (inlineLinks description)}}} <br/>{{/if}} {{#if see}}{{>see}} <br/>{{/if}} {{#if properties.0.description}}**Reasoning**:{{{stripNewlines (inlineLinks properties.0.description)}}}{{/if}} |
+{{/children~}}

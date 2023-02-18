@@ -1,0 +1,277 @@
+import nodePlugin from 'eslint-plugin-n';
+
+/**
+ * ESLint rules for [eslint-plugin-n](https://www.npmjs.com/package/eslint-plugin-n). Not that .js files are set up for es module syntax just like .cjs.
+ *
+ * @namespace node
+ * @property files .js, .mjs, .cjs except where stated.
+ **/
+const nodeRules = {
+	files: [
+		'**/*.js',
+		'**/*.mjs'
+	],
+	plugins: {
+		node: nodePlugin
+	},
+	languageOptions: {
+		globals: nodePlugin.configs['recommended-module'].globals
+	},
+	rules: {
+		/**
+		 * @property node/callback-return=off - Arbitrary.
+		 * @memberof node
+		 **/
+		'node/callback-return': 'off',
+
+		/**
+		 * @property no-console=off - Console is needed in node.
+		 * @memberof node
+		 **/
+		'no-console': 'off',
+
+		/**
+		 * @property node/exports-style=off - Irrelevant in es module syntax. Set to error for .cjs files.
+		 * @memberof node
+		 **/
+		'node/exports-style': 'off',
+
+		/**
+		 * @property node/file-extension-in-import=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/file-extension-in-import': [
+			'error',
+			'always'
+		],
+
+		/**
+		 * @property node/global-require=off - Arbitrary.
+		 * @memberof node
+		 **/
+		'node/global-require': 'off',
+
+		/**
+		 * @property node/handle-callback-err=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/handle-callback-err': ['error', 'error'],
+
+		/**
+		 * @property node/no-callback-literal=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/no-callback-literal': 'error',
+
+		/**
+		 * @property node/no-deprecated-api=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/no-deprecated-api': 'error',
+
+		/**
+		 * @property node/no-exports-assign=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/no-exports-assign': 'error',
+
+		/**
+		 * @property node/no-extraneous-import=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/no-extraneous-import': 'error',
+
+		/**
+		 * @property node/no-extraneous-require=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/no-extraneous-require': 'error',
+
+		/**
+		 * @property node/no-missing-import=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/no-missing-import': 'error',
+
+		/**
+		 * @property node/no-missing-require=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/no-missing-require': 'error',
+
+		/**
+		 * @property node/no-mixed-requires=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/no-mixed-requires': 'error',
+
+		/**
+		 * @property node/no-new-require=error - Readability and simplicity.
+		 * @memberof node
+		 **/
+		'node/no-new-require': 'error',
+
+		/**
+		 * @property node/no-path-concat=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/no-path-concat': 'error',
+
+		/**
+		 * @property node/no-process-env=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/no-process-env': 'error',
+
+		/**
+		 * @property node/no-process-exit=error - Code quality. If your building a CLI app then this can be turned off.
+		 * @memberof node
+		 **/
+		'node/no-process-exit': 'error',
+
+		/**
+		 * @property node/no-restricted-import=off - Project specific.
+		 * @memberof node
+		 **/
+		'node/no-restricted-import': 'off',
+
+		/**
+		 * @property node/no-restricted-require=off - Project specific.
+		 * @memberof node
+		 **/
+		'node/no-restricted-require': 'off',
+
+		/**
+		 * @property node/no-sync=error - Performance.
+		 * @memberof node
+		 **/
+		'node/no-sync': 'error',
+
+		/**
+		 * @property node/no-unpublished-bin=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/no-unpublished-bin': 'error',
+
+		/**
+		 * @property node/no-unpublished-import=error - REASON.
+		 * @memberof node
+		 **/
+		'node/no-unpublished-import': 'error',
+
+		/**
+		 * @property node/no-unpublished-require=error - REASON.
+		 * @memberof node
+		 **/
+		'node/no-unpublished-require': 'error',
+
+		/**
+		 * @property node/no-unsupported-features/es-builtins=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/no-unsupported-features/es-builtins': 'error',
+
+		/**
+		 * @property node/no-unsupported-features/es-syntax=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/no-unsupported-features/es-syntax': [
+			'error',
+			{
+				ignores: [
+					'modules'
+				]
+			}
+		],
+
+		/**
+		 * @property node/no-unsupported-features/node-builtins=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/no-unsupported-features/node-builtins': 'error',
+
+		/**
+		 * @property node/prefer-global/buffer=error - Readability and simplicity.
+		 * @memberof node
+		 **/
+		'node/prefer-global/buffer': ['error', 'always'],
+
+		/**
+		 * @property node/prefer-global/console=error - Readability and simplicity.
+		 * @memberof node
+		 **/
+		'node/prefer-global/console': ['error', 'always'],
+
+		/**
+		 * @property node/prefer-global/process=error - Readability and simplicity.
+		 * @memberof node
+		 **/
+		'node/prefer-global/process': ['error', 'always'],
+
+		/**
+		 * @property node/prefer-global/text-decoder=error - Readability and simplicity.
+		 * @memberof node
+		 **/
+		'node/prefer-global/text-decoder': 'error',
+
+		/**
+		 * @property node/prefer-global/text-encoder=error - Readability and simplicity.
+		 * @memberof node
+		 **/
+		'node/prefer-global/text-encoder': 'error',
+
+		/**
+		 * @property node/prefer-global/url=error - Readability and simplicity.
+		 * @memberof node
+		 **/
+		'node/prefer-global/url': ['error', 'always'],
+
+		/**
+		 * @property node/prefer-global/url-search-params=error - Readability and simplicity.
+		 * @memberof node
+		 **/
+		'node/prefer-global/url-search-params': ['error', 'always'],
+
+		/**
+		 * @property node/prefer-promises/dns=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/prefer-promises/dns': 'error',
+
+		/**
+		 * @property node/prefer-promises/fs=error - Code quality.
+		 * @memberof node
+		 **/
+		'node/prefer-promises/fs': 'error',
+
+		/**
+		 * @property node/process-exit-as-throw=error - Fixes consistent-return rule.
+		 * @memberof node
+		 **/
+		'node/process-exit-as-throw': 'error',
+
+		/**
+		 * @property node/shebang=warn - Code quality.
+		 * @memberof node
+		 **/
+		'node/shebang': 'warn'
+	}
+};
+
+export default nodeRules;
+
+export const nodeScriptRules = {
+	files: [
+		'**/*.cjs'
+	],
+	plugins: {
+		node: nodePlugin
+	},
+	languageOptions: {
+		globals: nodePlugin.configs['recommended-script'].globals
+	},
+	rules: {
+		...nodeRules.rules,
+		'node/exports-style': 'error'
+	}
+};

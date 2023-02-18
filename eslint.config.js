@@ -1,5 +1,13 @@
-import lucid from './index.js';
+import { lucidNode } from './index.js';
 
 export default [
-	...lucid
+	...lucidNode,
+	{
+		files: [
+			'**/*.js'
+		],
+		rules: {
+			'node/no-process-exit': 'off'
+		}
+	}
 ];

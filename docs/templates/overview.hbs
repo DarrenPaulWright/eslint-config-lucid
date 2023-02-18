@@ -1,0 +1,49 @@
+{{optionSet "global-index-format" "dl"~}}
+# {{changeCase "title" (package "name")}}
+
+> {{package "description"}}
+>
+> {{#each (package "badges")}}[![{{@key}}][{{@key}}]][{{@key}}-url]
+  {{/each}}
+
+{{#each (findBy this 'name' 'Disclaimer')}}
+<br><a name="Disclaimer"></a>
+
+{{>heading-indent}}Disclaimer
+{{inlineLinks summary}}
+{{/each}}
+
+<br><a name="Installation"></a>
+
+{{>heading-indent}}Installation
+{{#if (package "peerDependencies")}}
+First install peer dependencies:
+{{#each (package "peerDependencies")}}
+- [{{@key}}](https://www.npmjs.com/package/{{@key}}) {{this}}
+{{/each}}
+```
+npm i {{#each (package "peerDependencies")}}{{@key}} {{/each}}
+```
+Next, install {{package "name"}}:
+{{/if}}
+```
+npm i {{package "name"}}
+```
+{{#each (findBy this 'name' 'Installation')}}
+{{inlineLinks summary}}
+{{/each}}
+
+{{#each (findBy this 'name' 'About')}}
+<br><a name="About"></a>
+
+{{>heading-indent}}About
+{{inlineLinks summary}}
+
+{{/each}}
+
+{{>main-index~}}
+
+{{#each (package "badges")}}
+[{{@key}}]: {{replace this.base "{{name}}" (package "name")}}{{replace this.image "{{name}}" (package "name")}}
+[{{@key}}-url]: {{replace this.base "{{name}}" (package "name")}}{{replace this.url "{{name}}" (package "name")}}
+{{/each}}

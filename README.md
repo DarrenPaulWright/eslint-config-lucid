@@ -1,82 +1,38 @@
-# eslint-config-lucid
+# Eslint Config Lucid
 
 > A collection of eslint plugins with settings focused on reducing cognitive load and improving readability.
+>
+> 
+<br><a name="Disclaimer"></a>
 
 ## Disclaimer
+Lucid only supports the new flat config that shipped with ESLint v8.21.0
+which is still considered experimental.
 
-- Lucid only supports the new flat config that shipped with Eslint v8.21.0 which
-  is still considered experimental.
-- Lucid is still in its early stages. More plugins will be added as they add
-  support for the new config structure.
+<br><a name="Installation"></a>
 
 ## Installation
-
-You'll first need to install [ESLint](https://eslint.org/) >=8.21.0:
-
-```sh
-npm i eslint --save-dev
+First install peer dependencies:
+- [eslint](https://www.npmjs.com/package/eslint) &gt;&#x3D;8.34.0
 ```
-
-Next, install `eslint-config-lucid`:
-
-```sh
-npm i eslint-config-lucid --save-dev
+npm i eslint 
 ```
-
-## Usage
-
-Add `lucid` to your `eslint.config.js` configuration file.
-
-```javascript
-import lucid from 'eslint-config-lucid';
-
-export default [
-	...lucid,
-	// ... other rule sets.
-];
+Next, install eslint-config-lucid:
 ```
-
-Although Lucid is set up to apply rules to typescript and react files, you will
-need to add those plugins yourself. An example for typescript:
-
-```javascript
-import lucid from 'eslint-config-lucid';
-import typescriptPlugin from '@typescript-eslint/eslint-plugin';
-import typescriptParser from '@typescript-eslint/parser';
-
-export default [
-	...lucid,
-	{
-		files: ['**/*.ts'],
-		plugins: {
-			'@typescript-eslint': typescriptPlugin
-		},
-		languageOptions: {
-			parser: typescriptParser
-		},
-		rules: {
-			'semi': 0,
-			'@typescript-eslint/semi': 2
-		}
-	}
-];
+npm i eslint-config-lucid
 ```
+Then add Lucid to your eslint.config.js configuration file.
 
-Finally, Lucid has slightly relaxed rules for test files `**/*.test.js`
-and `**/*.test.ts`, as well as benchmark files `**/*.bench.js`
-and `**/*.bench.js`.
+<br><a name="About"></a>
 
-## Details
-
+## About
 Lucid starts from the eslint recommended settings. These rules are modified to
-support the intent of Lucid (see below), and other plugins are added as follows:
-
-- [eslint-plugin-babel](https://www.npmjs.com/package/eslint-plugin-babel)
-- [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn)
+support the intent of Lucid (see below), and other plugins are added as listed
+in the Rules section below.
 
 ### Intent
 
-Reducing [cognitive load](https://en.wikipedia.org/wiki/Cognitive_load) is the
+When it comes to formatting and syntax rules, reducing [cognitive load](https://en.wikipedia.org/wiki/Cognitive_load) is the
 primary intent of Lucid. Unlike so many code linters and formatters, I endeavor
 to base all my decisions on researched psychological principals. Some principles
 considered are:
@@ -90,4 +46,37 @@ considered are:
 - [Programming complexity](https://en.wikipedia.org/wiki/Programming_complexity)
 
 If you want to propose a change to a rule or suggest additional plugins, please
-include researched psychological principals in your issue or pull request. 
+include researched psychological principals in your issue or pull request.
+
+
+<br>
+
+## Rules
+
+<dl>
+<dt><a href="docs/babel.md">babel</a> : <code>object</code></dt>
+<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-babel">eslint-plugin-babel</a>. Each rule corresponds to a core eslint rule, and has the same options. These allow modern ES features without throwing false errors.</p>
+</dd>
+<dt><a href="docs/core.md">core</a> : <code>object</code></dt>
+<dd><p>Core ESLint rules.</p>
+</dd>
+<dt><a href="docs/node.md">node</a> : <code>object</code></dt>
+<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-n">eslint-plugin-n</a>. Not that .js files are set up for es module syntax just like .cjs.</p>
+</dd>
+<dt><a href="docs/prefer-arrow-functions.md">prefer-arrow-functions</a> : <code>object</code></dt>
+<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-prefer-arrow-functions">eslint-plugin-prefer-arrow-functions</a>.</p>
+</dd>
+<dt><a href="docs/promise.md">promise</a> : <code>object</code></dt>
+<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-promise">eslint-plugin-promise</a>.</p>
+</dd>
+<dt><a href="docs/regexp.md">regexp</a> : <code>object</code></dt>
+<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-regexp">eslint-plugin-regexp</a>.</p>
+</dd>
+<dt><a href="docs/security.md">security</a> : <code>object</code></dt>
+<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-security">eslint-plugin-security</a>.</p>
+</dd>
+<dt><a href="docs/unicorn.md">unicorn</a> : <code>object</code></dt>
+<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-unicorn">eslint-plugin-unicorn</a>.</p>
+</dd>
+</dl>
+

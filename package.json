@@ -24,34 +24,52 @@
 	"type": "module",
 	"main": "index.js",
 	"scripts": {
-		"test": "eslint * --config eslint.config.js",
+		"test": "npm run lint && npm run test:main && npm run test:plugins",
+		"test:main": "node utility\\checkMainRules.js --test",
+		"test:plugins": "node utility\\checkPluginRules.js --test",
+		"lint": "eslint **/* --config eslint.config.js",
+		"check:main": "node utility\\checkMainRules.js",
+		"check:plugins": "node utility\\checkPluginRules.js",
 		"preversion": "npm test && npm run docs && git add --all && git diff HEAD --quiet || git commit -m \"Updating docs\"",
 		"postversion": "npm publish",
 		"postpublish": "git push --follow-tags",
 		"pre-clean": "rm -rf node_modules",
-		"clean": "npm run pre-clean && npm install && npm audit fix",
-		"update": "ncu -u && git diff --quiet || npm install && npm audit fix",
+		"clean": "npm run pre-clean && npm install",
+		"update": "ncu -u && git diff --quiet || npm install",
 		"update-clean": "npm run pre-clean && npm run update",
 		"update-commit": "npm run update && npm test && git add --all && git diff HEAD --quiet || git commit -m \"Updating dependencies\"",
 		"update-patch": "npm run update && npm test && git add --all && git diff HEAD --quiet || git commit -m \"Updating dependencies\" && npm version patch",
-		"docs": ""
+		"docs:readme": "jsdoc2md ./index.js ruleSets/**/*.js > README.md -t ./docs/templates/overview.hbs --plugin docs/templates/overviewPlugin.cjs",
+		"docs:all": "exec-each --out docs/{basefile}.md ruleSets/**/*.js jsdoc2md -- {path} -t ./docs/templates/docs.hbs --plugin docs/templates/docsPlugin.cjs",
+		"docs": "run-p docs:*"
 	},
 	"engines": {
-		"node": "^16.0.0 || >= 18.0.0"
+		"node": ">=16.0.0"
 	},
 	"dependencies": {
-		"@babel/core": "^7.20.2",
+		"@babel/core": "^7.20.12",
 		"@babel/eslint-parser": "^7.19.1",
 		"eslint-plugin-babel": "^5.3.1",
-		"eslint-plugin-unicorn": "^44.0.2"
+		"eslint-plugin-jsdoc": "^40.0.0",
+		"eslint-plugin-n": "^15.6.1",
+		"eslint-plugin-prefer-arrow-functions": "^3.1.4",
+		"eslint-plugin-promise": "^6.1.1",
+		"eslint-plugin-regexp": "^1.12.0",
+		"eslint-plugin-security": "^1.7.1",
+		"eslint-plugin-unicorn": "^45.0.2"
 	},
 	"devDependencies": {
-		"@eslint/eslintrc": "^1.3.3",
+		"@eslint/eslintrc": "^1.4.1",
+		"change-case": "^4.1.2",
+		"display-value": "^2.1.0",
+		"dmd-readable": "^1.2.4",
 		"eslint": "^8.27.0",
 		"eslint-plugin-eslint-config": "^2.0.0",
-		"eslint-plugin-node": "^11.1.0"
+		"exec-each": "0.0.3",
+		"jsdoc-to-markdown": "^8.0.0",
+		"npm-run-all": "^4.1.5"
 	},
 	"peerDependencies": {
-		"eslint": ">=8.27.0"
+		"eslint": ">=8.34.0"
 	}
 }
