@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-lucid",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "A collection of eslint plugins with settings focused on reducing cognitive load and improving readability.",
 	"keywords": [
 		"eslint",
