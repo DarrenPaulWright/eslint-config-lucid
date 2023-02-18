@@ -23,6 +23,11 @@
 	},
 	"type": "module",
 	"main": "index.js",
+	"files": [
+		"/docs",
+		"/ruleSets",
+		"/utility"
+	],
 	"scripts": {
 		"test": "npm run lint && npm run test:main && npm run test:plugins",
 		"test:main": "node utility\\checkMainRules.js --test",
