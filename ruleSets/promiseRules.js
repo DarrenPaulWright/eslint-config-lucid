@@ -20,10 +20,10 @@ export default {
 	},
 	rules: {
 		/**
-		 * @property promise/always-return=error - Code quality.
+		 * @property promise/always-return=off - Arbitrary.
 		 * @memberof promise
 		 **/
-		'promise/always-return': 'error',
+		'promise/always-return': 'off',
 
 		/**
 		 * @property promise/avoid-new=off - Arbitrary.
