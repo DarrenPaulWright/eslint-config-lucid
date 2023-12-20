@@ -138,10 +138,10 @@ export default {
 		 * Enforce that class methods utilize `this`
 		 * @see {@link https://eslint.org/docs/rules/class-methods-use-this}}
 		 *
-		 * @property class-methods-use-this=error - Readability and simplicity.
+		 * @property class-methods-use-this=warn - Readability and simplicity.
 		 * @memberof core
 		 **/
-		'class-methods-use-this': 'error',
+		'class-methods-use-this': 'warn',
 
 		/**
 		 * Require or disallow trailing commas
