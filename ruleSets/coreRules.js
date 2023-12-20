@@ -571,11 +571,12 @@ export default {
 		'max-len': [
 			'error',
 			{
-				code: 80,
+				code: 100,
 				tabWidth: 4,
 				ignoreComments: true,
+				ignoreTrailingComments: true,
 				ignoreUrls: true,
-				ignoreStrings: false,
+				ignoreStrings: true,
 				ignoreTemplateLiterals: true,
 				ignoreRegExpLiterals: true
 			}
