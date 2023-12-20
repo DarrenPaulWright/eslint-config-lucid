@@ -129,10 +129,10 @@ export default {
 		 * Enforce or disallow capitalization of the first letter of a comment
 		 * @see {@link https://eslint.org/docs/rules/capitalized-comments}}
 		 *
-		 * @property capitalized-comments=warn - Readability and simplicity.
+		 * @property capitalized-comments=off - Arbitrary.
 		 * @memberof core
 		 **/
-		'capitalized-comments': 'warn',
+		'capitalized-comments': 'off',
 
 		/**
 		 * Enforce that class methods utilize `this`
