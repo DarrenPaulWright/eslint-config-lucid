@@ -9,7 +9,9 @@ import nodePlugin from 'eslint-plugin-n';
 const nodeRules = {
 	files: [
 		'**/*.js',
-		'**/*.mjs'
+		'**/*.mjs',
+		'**/*.ts',
+		'**/*.tsx'
 	],
 	plugins: {
 		node: nodePlugin
@@ -37,7 +39,7 @@ const nodeRules = {
 		'node/exports-style': 'off',
 
 		/**
-		 * @property node/file-extension-in-import=error - Code quality.
+		 * @property node/file-extension-in-import=error - Code quality. This is turned off in typescript files.
 		 * @memberof node
 		 **/
 		'node/file-extension-in-import': [
@@ -88,7 +90,7 @@ const nodeRules = {
 		'node/no-extraneous-require': 'error',
 
 		/**
-		 * @property node/no-missing-import=error - Code quality.
+		 * @property node/no-missing-import=error - Code quality. This is turned off in typescript files.
 		 * @memberof node
 		 **/
 		'node/no-missing-import': 'error',
@@ -273,5 +275,16 @@ export const nodeScriptRules = {
 	rules: {
 		...nodeRules.rules,
 		'node/exports-style': 'error'
+	}
+};
+
+export const nodeTypescriptRules = {
+	files: [
+		'**/*.ts',
+		'**/*.tsx'
+	],
+	rules: {
+		'node/no-missing-import': 'off',
+		'node/file-extension-in-import': 'off'
 	}
 };

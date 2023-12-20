@@ -1,6 +1,9 @@
 import babelRules from './ruleSets/babelRules.js';
 import coreRules from './ruleSets/coreRules.js';
-import nodeRules, { nodeScriptRules } from './ruleSets/nodeRules.js';
+import nodeRules, {
+	nodeScriptRules,
+	nodeTypescriptRules
+} from './ruleSets/nodeRules.js';
 import preferArrowFunctionsRules from './ruleSets/preferArrowFunctionsRules.js';
 import promiseRules from './ruleSets/promiseRules.js';
 import regexpRules from './ruleSets/regexpRules.js';
@@ -78,7 +81,10 @@ const lucid = [
 		files: [
 			'**/*.test.js',
 			'**/*.test.ts',
-			'**/*.test.mjs'
+			'**/*.test.mjs',
+			'**/*.spec.js',
+			'**/*.spec.ts',
+			'**/*.spec.mjs'
 		],
 		rules: {
 			'consistent-this': 0,
@@ -103,6 +109,7 @@ export const lucidNode = [
 	...lucid,
 	nodeRules,
 	nodeScriptRules,
+	nodeTypescriptRules,
 	securityRules
 ];
 

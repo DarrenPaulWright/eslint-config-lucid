@@ -10,7 +10,9 @@ export default {
 	files: [
 		'**/*.js',
 		'**/*.mjs',
-		'**/*.cjs'
+		'**/*.cjs',
+		'**/*.ts',
+		'**/*.tsx'
 	],
 	plugins: {
 		security: securityPlugin
