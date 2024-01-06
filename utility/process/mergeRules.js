@@ -26,7 +26,7 @@ const mergeRules = (
 	let removedRuleCount = 0;
 	const otherRuleNameMap = Object.keys(otherRules)
 		.reduce((result, label) => {
-			if (pluginNames.includes(ruleLabel.getPluginName(label))) {
+			if (pluginNames?.includes(ruleLabel.getPluginName(label))) {
 				result[ruleLabel.getName(label)] = true;
 			}
 

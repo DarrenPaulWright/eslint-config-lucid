@@ -7,7 +7,8 @@ export default [
 			'**/*.js'
 		],
 		rules: {
-			'node/no-process-exit': 'off'
+			'node/no-process-exit': 'off',
+			'node/no-unpublished-import': 'off'
 		}
 	}
 ];

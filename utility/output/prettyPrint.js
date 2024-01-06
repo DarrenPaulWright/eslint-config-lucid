@@ -1,4 +1,3 @@
-// eslint-disable-next-line node/no-unpublished-import
 import displayValue from 'display-value';
 
 export const pretty = (value) => displayValue(value, {

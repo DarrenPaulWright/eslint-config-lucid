@@ -1,7 +1,5 @@
 import config from '../index.js';
-// eslint-disable-next-line node/no-unpublished-import
 import eslintRules from '../node_modules/eslint/lib/rules/index.js';
-import cleanRules from './clean/cleanRules.js';
 import getAddedRules from './process/getAddedRules.js';
 import mergeRules from './process/mergeRules.js';
 import prettyPrint from './output/prettyPrint.js';
