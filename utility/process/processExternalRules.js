@@ -14,12 +14,13 @@ const buildDeprecationMessage = (meta) => {
 	return output;
 };
 
-export default (base, name, isComments) => {
+const processExternalRules = (externalRules, name, isComments) => {
 	const rules = {};
 	const descriptions = {};
 	const deprecated = {};
 	const nameBase = name ? `${ name }/` : '';
-	const process = (value, rule) => {
+
+	const processRule = (value, rule) => {
 		if (value.meta.deprecated) {
 			deprecated[nameBase + rule] = buildDeprecationMessage(value.meta);
 		}
@@ -49,14 +50,16 @@ export default (base, name, isComments) => {
 		}
 	};
 
-	if (base.forEach) {
-		base.forEach(process);
+	if (externalRules.forEach) {
+		externalRules.forEach(processRule);
 	}
 	else {
-		Object.entries(base).forEach(([rule, value]) => {
-			process(value, rule);
+		Object.entries(externalRules).forEach(([rule, value]) => {
+			processRule(value, rule);
 		});
 	}
 
 	return [rules, descriptions, deprecated];
 };
+
+export default processExternalRules;
