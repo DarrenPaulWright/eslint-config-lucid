@@ -16,7 +16,7 @@ const isComments = argv.includes('--comments');
 const [externalRules, descriptions, deprecated] =
 	processExternalRules(eslintRules, '', isComments);
 
-const badValues = checkValues(localRules);
+const badValues = checkValues(localRules, eslintRules);
 const badValuesCount = Object.keys(badValues).length;
 
 const [removedRules, removedRuleCount] =
@@ -54,7 +54,7 @@ else if (
 
 	if (badValuesCount !== 0) {
 		prettyPrint(
-			`${ chalk.redBright('- Bad values') } for ${ name }:`,
+			`${ chalk.redBright('- Bad values') } in Core:`,
 			badValues
 		);
 	}

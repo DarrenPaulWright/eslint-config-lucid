@@ -32,6 +32,7 @@ const processPluginRules = (config) => {
 	const rules = {};
 	const descriptions = {};
 	const deprecated = {};
+	const badValues = {};
 
 	if ('plugins' in config) {
 		Object.entries(config.plugins)
@@ -39,13 +40,16 @@ const processPluginRules = (config) => {
 				const [subRules, subDescriptions, subDeprecated] =
 					processExternalRules(plugin.rules, name);
 
+				const subBadValues = checkValues(config.rules, plugin.rules);
+
 				Object.assign(rules, subRules);
 				Object.assign(descriptions, subDescriptions);
 				Object.assign(deprecated, subDeprecated);
+				Object.assign(badValues, subBadValues);
 			});
 	}
 
-	return [rules, descriptions, deprecated];
+	return [rules, descriptions, deprecated, badValues];
 };
 
 const purgeDeprecatedCoreRules = (rules, removedRules) => {
@@ -62,10 +66,9 @@ const processConfig = (config, index, configName) => {
 	const localRules = config.rules ?? {};
 	const pluginNames = Object.keys(config.plugins ?? {});
 
-	const [externalRules, descriptions, deprecated] =
+	const [externalRules, descriptions, deprecated, badValues] =
 		processPluginRules(config);
 
-	const badValues = checkValues(localRules);
 	const badValuesCount = Object.keys(badValues).length;
 
 	const [removedRules, removedRuleCount] =
