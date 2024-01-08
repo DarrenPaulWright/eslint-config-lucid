@@ -1,7 +1,6 @@
 import chalk from 'chalk';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import eslintRules from '../node_modules/eslint/lib/rules/index.js';
 import cleanRules from './clean/cleanRules.js';
 import getAddedRules from './process/getAddedRules.js';
 import mergeRules from './process/mergeRules.js';
@@ -21,6 +20,7 @@ const initialPath = argv[1].includes('node_modules') ?
 	argv[1].slice(0, argv[1].indexOf('node_modules') - 1) :
 	join(__dirname, '..');
 
+const eslintRules = await import(`file://${ join(initialPath, 'node_modules/eslint/lib/rules/index.js') }`);
 const lucid = await import(`file://${ join(initialPath, 'index.js') }`);
 
 // eslint-disable-next-line no-unused-vars
@@ -117,7 +117,7 @@ if (isComments) {
 	let count = 0;
 
 	for (const [name, data] of entries) {
-		const rules = data.rules;
+		const rules = data.externalRules;
 
 		await printComments(cleanRules(rules), data.descriptions, name);
 

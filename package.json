@@ -29,11 +29,11 @@
 		"/utility"
 	],
 	"scripts": {
-		"test": "npm run lint && npm run test:main && npm run test:plugins",
-		"test:main": "node utility\\checkMainRules.js --test",
+		"test": "npm run lint && npm run test:core && npm run test:plugins",
+		"test:core": "node utility\\checkMainRules.js --test",
 		"test:plugins": "node utility\\checkPluginRules.js --test",
 		"lint": "eslint **/* --config eslint.config.js",
-		"check:main": "node utility\\checkMainRules.js",
+		"check:core": "node utility\\checkMainRules.js",
 		"check:plugins": "node utility\\checkPluginRules.js",
 		"preversion": "npm test && npm run docs && git add --all && git diff HEAD --quiet || git commit -m \"Updating docs\"",
 		"postversion": "npm publish",
@@ -52,30 +52,32 @@
 		"node": ">=16.0.0"
 	},
 	"dependencies": {
-		"@babel/core": "^7.20.12",
-		"@babel/eslint-parser": "^7.19.1",
+		"@babel/core": "^7.23.7",
+		"@babel/eslint-parser": "^7.23.3",
+		"@stylistic/eslint-plugin-js": "^1.5.3",
+		"@stylistic/eslint-plugin-plus": "^1.5.3",
 		"eslint-plugin-babel": "^5.3.1",
-		"eslint-plugin-jsdoc": "^40.0.0",
-		"eslint-plugin-n": "^15.6.1",
-		"eslint-plugin-prefer-arrow-functions": "^3.1.4",
+		"eslint-plugin-jsdoc": "^48.0.2",
+		"eslint-plugin-n": "^16.6.1",
+		"eslint-plugin-prefer-arrow-functions": "^3.2.4",
 		"eslint-plugin-promise": "^6.1.1",
-		"eslint-plugin-regexp": "^1.12.0",
-		"eslint-plugin-security": "^1.7.1",
-		"eslint-plugin-unicorn": "^45.0.2"
+		"eslint-plugin-regexp": "^2.1.2",
+		"eslint-plugin-security": "^2.1.0",
+		"eslint-plugin-unicorn": "^50.0.1"
 	},
 	"devDependencies": {
-		"@eslint/eslintrc": "^1.4.1",
+		"@eslint/eslintrc": "^3.0.0",
 		"chalk": "^5.3.0",
-		"change-case": "^4.1.2",
-		"display-value": "^2.1.0",
+		"change-case": "^5.3.0",
+		"display-value": "^2.2.0",
 		"dmd-readable": "^1.2.4",
-		"eslint": "^8.27.0",
+		"eslint": "^8.56.0",
 		"eslint-plugin-eslint-config": "^2.0.0",
 		"exec-each": "0.0.3",
 		"jsdoc-to-markdown": "^8.0.0",
 		"npm-run-all": "^4.1.5"
 	},
 	"peerDependencies": {
-		"eslint": "^8.27.0"
+		"eslint": "8.x"
 	}
 }

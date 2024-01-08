@@ -21,30 +21,30 @@ const processExternalRules = (externalRules, name, isComments) => {
 	const nameBase = name ? `${ name }/` : '';
 
 	const processRule = (value, rule) => {
-		if (value.meta.deprecated) {
+		if (value.meta?.deprecated) {
 			deprecated[nameBase + rule] = buildDeprecationMessage(value.meta);
 		}
 		else {
-			descriptions[rule] = value.meta.docs?.description || '';
+			descriptions[rule] = value.meta?.docs?.description || '';
 
-			if (value.meta.docs?.url) {
+			if (value.meta?.docs?.url) {
 				if (isComments) {
 					if (descriptions[rule]) {
 						descriptions[rule] += '\n';
 					}
 
-					descriptions[rule] += `@see {@link ${ value.meta.docs?.url }}`;
+					descriptions[rule] += `@see {@link ${ value.meta?.docs?.url }}`;
 				}
 				else {
 					if (descriptions[rule]) {
 						descriptions[rule] += NEWLINE;
 					}
 
-					descriptions[rule] += value.meta.docs?.url;
+					descriptions[rule] += value.meta?.docs?.url;
 				}
 			}
 
-			rules[nameBase + rule] = value.meta.docs?.recommended ?
+			rules[nameBase + rule] = value.meta?.docs?.recommended ?
 				'error' :
 				'off';
 		}

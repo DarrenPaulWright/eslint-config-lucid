@@ -8,6 +8,8 @@ import preferArrowFunctionsRules from './ruleSets/preferArrowFunctionsRules.js';
 import promiseRules from './ruleSets/promiseRules.js';
 import regexpRules from './ruleSets/regexpRules.js';
 import securityRules from './ruleSets/securityRules.js';
+import stylisticJsRules from './ruleSets/stylisticJsRules.js';
+import stylisticPlusRules from './ruleSets/stylisticPlusRules.js';
 import unicornRules from './ruleSets/unicornRules.js';
 
 /**
@@ -16,7 +18,6 @@ import unicornRules from './ruleSets/unicornRules.js';
  * @summary
  *
  * Lucid only supports the new flat config that shipped with ESLint v8.21.0
- * which is still considered experimental.
  */
 
 /**
@@ -24,7 +25,7 @@ import unicornRules from './ruleSets/unicornRules.js';
  * @private
  * @summary
  *
- * Then add Lucid to your eslint.config.js configuration file.
+ * Add Lucid to your eslint.config.js configuration file.
  *
  * @example
  * ```javascript
@@ -32,6 +33,14 @@ import unicornRules from './ruleSets/unicornRules.js';
  *
  * export default [
  * 	...lucid,
+ * 	// ... other rule sets.
+ * ];
+ *
+ * // Or for node
+ * import { lucidNode } from 'eslint-config-lucid';
+ *
+ * export default [
+ * 	...lucidNode,
  * 	// ... other rule sets.
  * ];
  * ```
@@ -72,6 +81,8 @@ const lucid = [
 		}
 	},
 	coreRules,
+	stylisticJsRules,
+	stylisticPlusRules,
 	promiseRules,
 	regexpRules,
 	unicornRules,

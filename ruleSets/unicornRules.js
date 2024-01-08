@@ -282,6 +282,12 @@ export default {
 		'unicorn/no-unnecessary-await': 'error',
 
 		/**
+		 * @property unicorn/no-unnecessary-polyfills=off - Project specific.
+		 * @memberof unicorn
+		 **/
+		'unicorn/no-unnecessary-polyfills': 'off',
+
+		/**
 		 * @property unicorn/no-unreadable-array-destructuring=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
@@ -292,12 +298,6 @@ export default {
 		 * @memberof unicorn
 		 **/
 		'unicorn/no-unreadable-iife': 'error',
-
-		/**
-		 * @property unicorn/no-unsafe-regex=off - Covered by regexp plugin.
-		 * @memberof unicorn
-		 **/
-		'unicorn/no-unsafe-regex': 'off',
 
 		/**
 		 * @property unicorn/no-unused-properties=warn - Code quality.
@@ -400,6 +400,12 @@ export default {
 		 * @memberof unicorn
 		 **/
 		'unicorn/prefer-at': 'off',
+
+		/**
+		 * @property unicorn/prefer-at=error - Code quality.
+		 * @memberof unicorn
+		 **/
+		'unicorn/prefer-blob-reading-methods': 'error',
 
 		/**
 		 * @property unicorn/prefer-code-point=error - Code quality.

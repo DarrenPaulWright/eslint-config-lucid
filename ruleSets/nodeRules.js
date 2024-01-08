@@ -17,7 +17,12 @@ const nodeRules = {
 		node: nodePlugin
 	},
 	languageOptions: {
-		globals: nodePlugin.configs['recommended-module'].globals
+		globals: {
+			...nodePlugin.configs['recommended-module'].globals,
+			process: true,
+			console: true,
+			URL: true
+		}
 	},
 	rules: {
 		/**
@@ -156,16 +161,16 @@ const nodeRules = {
 		'node/no-unpublished-bin': 'error',
 
 		/**
-		 * @property node/no-unpublished-import=error - REASON.
+		 * @property node/no-unpublished-import=off - False positives.
 		 * @memberof node
 		 **/
-		'node/no-unpublished-import': 'error',
+		'node/no-unpublished-import': 'off',
 
 		/**
-		 * @property node/no-unpublished-require=error - REASON.
+		 * @property node/no-unpublished-require=off - False positives.
 		 * @memberof node
 		 **/
-		'node/no-unpublished-require': 'error',
+		'node/no-unpublished-require': 'off',
 
 		/**
 		 * @property node/no-unsupported-features/es-builtins=error - Code quality.

@@ -32,6 +32,12 @@ export default {
 		'regexp/control-character-escape': 'error',
 
 		/**
+		 * @property regexp/grapheme-string-literal=error - Readability and simplicity.
+		 * @memberof regexp
+		 **/
+		'regexp/grapheme-string-literal': 'error',
+
+		/**
 		 * @property regexp/hexadecimal-escape=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
@@ -108,6 +114,12 @@ export default {
 		 * @memberof regexp
 		 **/
 		'regexp/no-empty-lookarounds-assertion': 'error',
+
+		/**
+		 * @property regexp/no-empty-string-literal=error - Readability and simplicity.
+		 * @memberof regexp
+		 **/
+		'regexp/no-empty-string-literal': 'error',
 
 		/**
 		 * @property regexp/no-escape-backspace=error - Readability.
@@ -290,6 +302,18 @@ export default {
 		'regexp/no-useless-range': 'error',
 
 		/**
+		 * @property regexp/no-useless-set-operand=error - Readability and simplicity.
+		 * @memberof regexp
+		 **/
+		'regexp/no-useless-set-operand': 'error',
+
+		/**
+		 * @property regexp/no-useless-string-literal=error - Readability and simplicity.
+		 * @memberof regexp
+		 **/
+		'regexp/no-useless-string-literal': 'error',
+
+		/**
 		 * @property regexp/no-useless-two-nums-quantifier=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
@@ -404,6 +428,12 @@ export default {
 		'regexp/prefer-result-array-groups': 2,
 
 		/**
+		 * @property regexp/prefer-set-operation=error - Readability and simplicity.
+		 * @memberof regexp
+		 **/
+		'regexp/prefer-set-operation': 'error',
+
+		/**
 		 * @property regexp/prefer-star-quantifier=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
@@ -426,6 +456,18 @@ export default {
 		 * @memberof regexp
 		 **/
 		'regexp/require-unicode-regexp': 'off',
+
+		/**
+		 * @property regexp/require-unicode-sets-regexp=off - Arbitrary.
+		 * @memberof regexp
+		 **/
+		'regexp/require-unicode-sets-regexp': 'off',
+
+		/**
+		 * @property regexp/simplify-set-operations=error - Readability and simplicity..
+		 * @memberof regexp
+		 **/
+		'regexp/simplify-set-operations': 'error',
 
 		/**
 		 * @property regexp/sort-alternatives=error - Readability and simplicity.

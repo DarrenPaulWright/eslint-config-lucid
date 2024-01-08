@@ -26,7 +26,7 @@ if (isComments) {
 }
 else if (addedRuleCount !== 0 || removedRuleCount !== 0) {
 	if (isTest) {
-		throw new Error(`Main ESLint rules out of date, added ${ addedRuleCount } and removed ${ removedRuleCount }`);
+		throw new Error(`Core ESLint rules out of date, added ${ addedRuleCount } and removed ${ removedRuleCount }`);
 	}
 
 	if (addedRuleCount !== 0) {
@@ -38,5 +38,5 @@ else if (addedRuleCount !== 0 || removedRuleCount !== 0) {
 	}
 }
 else {
-	console.log('Main ESLint rules up to date.');
+	console.log('Core ESLint rules up to date.');
 }

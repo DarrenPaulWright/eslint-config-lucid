@@ -44,18 +44,6 @@ export default {
 		'babel/no-unused-expressions': 'error',
 
 		/**
-		 * @property babel/object-curly-spacing=error - Provides whitespace to make object contents more readable. Gestalt Psychology.
-		 * @memberof babel
-		 **/
-		'babel/object-curly-spacing': ['error', 'always'],
-
-		/**
-		 * @property babel/quotes=error - Maintains consistency. Single quotes are visually lighter weight and allow the text within them to be more visible therefor reducing cognitive load.
-		 * @memberof babel
-		 **/
-		'babel/quotes': ['error', 'single'],
-
-		/**
 		 * @property babel/semi=error - Semicolons provide the developer with a visual indication of the end of a thought, much like a period in a sentence. Imagine reading a book without periods, the cognitive load is much higher if you have to figure out the end of each thought.
 		 * @memberof babel
 		 **/
