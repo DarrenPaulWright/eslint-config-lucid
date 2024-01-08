@@ -17,6 +17,7 @@
 | --- | --- | --- |
 | regexp/confusing-quantifier | error |   **Reasoning**:Code quality. |
 | regexp/control-character-escape | error |   **Reasoning**:Readability and simplicity. |
+| regexp/grapheme-string-literal | error |   **Reasoning**:Readability and simplicity. |
 | regexp/hexadecimal-escape | error |   **Reasoning**:Readability and simplicity. |
 | regexp/letter-case | error |   **Reasoning**:Readability and simplicity. |
 | regexp/match-any | error |   **Reasoning**:Readability and simplicity. |
@@ -30,6 +31,7 @@
 | regexp/no-empty-character-class | error |   **Reasoning**:Code quality. |
 | regexp/no-empty-group | error |   **Reasoning**:Code quality. |
 | regexp/no-empty-lookarounds-assertion | error |   **Reasoning**:Code quality. |
+| regexp/no-empty-string-literal | error |   **Reasoning**:Readability and simplicity. |
 | regexp/no-escape-backspace | error |   **Reasoning**:Readability. |
 | regexp/no-extra-lookaround-assertions | error |   **Reasoning**:Readability and simplicity. |
 | regexp/no-invalid-regexp | error |   **Reasoning**:Code quality. |
@@ -60,6 +62,8 @@
 | regexp/no-useless-non-capturing-group | error |   **Reasoning**:Code quality. |
 | regexp/no-useless-quantifier | error |   **Reasoning**:Readability and simplicity. |
 | regexp/no-useless-range | error |   **Reasoning**:Readability and simplicity. |
+| regexp/no-useless-set-operand | error |   **Reasoning**:Readability and simplicity. |
+| regexp/no-useless-string-literal | error |   **Reasoning**:Readability and simplicity. |
 | regexp/no-useless-two-nums-quantifier | error |   **Reasoning**:Readability and simplicity. |
 | regexp/no-zero-quantifier | error |   **Reasoning**:Readability and simplicity. |
 | regexp/optimal-lookaround-quantifier | error |   **Reasoning**:Readability and simplicity. |
@@ -79,10 +83,13 @@
 | regexp/prefer-regexp-exec | error |   **Reasoning**:Performance. |
 | regexp/prefer-regexp-test | error |   **Reasoning**:Readability and simplicity. |
 | regexp/prefer-result-array-groups | error |   **Reasoning**:Readability and simplicity. |
+| regexp/prefer-set-operation | error |   **Reasoning**:Readability and simplicity. |
 | regexp/prefer-star-quantifier | error |   **Reasoning**:Readability and simplicity. |
 | regexp/prefer-unicode-codepoint-escapes | error |   **Reasoning**:Readability and simplicity. |
 | regexp/prefer-w | error |   **Reasoning**:Readability and simplicity. |
 | regexp/require-unicode-regexp | off |   **Reasoning**:Covered by regexp/no-misleading-unicode-character. |
+| regexp/require-unicode-sets-regexp | off |   **Reasoning**:Arbitrary. |
+| regexp/simplify-set-operations | error |   **Reasoning**:Readability and simplicity.. |
 | regexp/sort-alternatives | error |   **Reasoning**:Readability and simplicity. |
 | regexp/sort-character-class-elements | error |   **Reasoning**:Readability and simplicity. |
 | regexp/sort-flags | error |   **Reasoning**:Readability and simplicity. |

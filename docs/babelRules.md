@@ -19,7 +19,5 @@
 | babel/new-cap | error |   **Reasoning**:Maintains consistency and readability. Distinguishes instantiable items from instances. |
 | babel/no-invalid-this | error |   **Reasoning**:Code quality. |
 | babel/no-unused-expressions | error |   **Reasoning**:Code quality. |
-| babel/object-curly-spacing | error |   **Reasoning**:Provides whitespace to make object contents more readable. Gestalt Psychology. |
-| babel/quotes | error |   **Reasoning**:Maintains consistency. Single quotes are visually lighter weight and allow the text within them to be more visible therefor reducing cognitive load. |
 | babel/semi | error |   **Reasoning**:Semicolons provide the developer with a visual indication of the end of a thought, much like a period in a sentence. Imagine reading a book without periods, the cognitive load is much higher if you have to figure out the end of each thought. |
 | babel/valid-typeof | error |   **Reasoning**:Error prevention. |

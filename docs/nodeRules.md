@@ -18,7 +18,7 @@
 | node/callback-return | off |   **Reasoning**:Arbitrary. |
 | no-console | off |   **Reasoning**:Console is needed in node. |
 | node/exports-style | off |   **Reasoning**:Irrelevant in es module syntax. Set to error for .cjs files. |
-| node/file-extension-in-import | error |   **Reasoning**:Code quality. |
+| node/file-extension-in-import | error |   **Reasoning**:Code quality. This is turned off in typescript files. |
 | node/global-require | off |   **Reasoning**:Arbitrary. |
 | node/handle-callback-err | error |   **Reasoning**:Code quality. |
 | node/no-callback-literal | error |   **Reasoning**:Code quality. |
@@ -26,7 +26,7 @@
 | node/no-exports-assign | error |   **Reasoning**:Code quality. |
 | node/no-extraneous-import | error |   **Reasoning**:Code quality. |
 | node/no-extraneous-require | error |   **Reasoning**:Code quality. |
-| node/no-missing-import | error |   **Reasoning**:Code quality. |
+| node/no-missing-import | error |   **Reasoning**:Code quality. This is turned off in typescript files. |
 | node/no-missing-require | error |   **Reasoning**:Code quality. |
 | node/no-mixed-requires | error |   **Reasoning**:Code quality. |
 | node/no-new-require | error |   **Reasoning**:Readability and simplicity. |
@@ -37,8 +37,8 @@
 | node/no-restricted-require | off |   **Reasoning**:Project specific. |
 | node/no-sync | error |   **Reasoning**:Performance. |
 | node/no-unpublished-bin | error |   **Reasoning**:Code quality. |
-| node/no-unpublished-import | error |   **Reasoning**:REASON. |
-| node/no-unpublished-require | error |   **Reasoning**:REASON. |
+| node/no-unpublished-import | off |   **Reasoning**:False positives. |
+| node/no-unpublished-require | off |   **Reasoning**:False positives. |
 | node/no-unsupported-features/es-builtins | error |   **Reasoning**:Code quality. |
 | node/no-unsupported-features/es-syntax | error |   **Reasoning**:Code quality. |
 | node/no-unsupported-features/node-builtins | error |   **Reasoning**:Code quality. |

@@ -7,13 +7,12 @@
 
 ## Disclaimer
 Lucid only supports the new flat config that shipped with ESLint v8.21.0
-which is still considered experimental.
 
 <br><a name="Installation"></a>
 
 ## Installation
 First install peer dependencies:
-- [eslint](https://www.npmjs.com/package/eslint) &gt;&#x3D;8.34.0
+- [eslint](https://www.npmjs.com/package/eslint) 8.x
 ```
 npm i eslint 
 ```
@@ -21,7 +20,7 @@ Next, install eslint-config-lucid:
 ```
 npm i eslint-config-lucid
 ```
-Then add Lucid to your eslint.config.js configuration file.
+Add Lucid to your eslint.config.js configuration file.
 
 <br><a name="About"></a>
 
@@ -74,6 +73,12 @@ include researched psychological principals in your issue or pull request.
 </dd>
 <dt><a href="docs/security.md">security</a> : <code>object</code></dt>
 <dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-security">eslint-plugin-security</a>.</p>
+</dd>
+<dt><a href="docs/@stylistic/js.md">@stylistic/js</a> : <code>object</code></dt>
+<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/@stylistic/eslint-plugin-js">@stylistic/eslint-plugin-js</a>.</p>
+</dd>
+<dt><a href="docs/@stylistic/plus.md">@stylistic/plus</a> : <code>object</code></dt>
+<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/@stylistic/eslint-plugin-plus">@stylistic/eslint-plugin-plus</a>.</p>
 </dd>
 <dt><a href="docs/unicorn.md">unicorn</a> : <code>object</code></dt>
 <dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-unicorn">eslint-plugin-unicorn</a>.</p>

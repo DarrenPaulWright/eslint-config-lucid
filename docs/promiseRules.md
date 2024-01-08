@@ -15,7 +15,7 @@
 
 | Rule | Value | Description |
 | --- | --- | --- |
-| promise/always-return | error |   **Reasoning**:Code quality. |
+| promise/always-return | off |   **Reasoning**:Arbitrary. |
 | promise/avoid-new | off |   **Reasoning**:Arbitrary. |
 | promise/catch-or-return | error |   **Reasoning**:Code quality. |
 | promise/no-callback-in-promise | warn |   **Reasoning**:Code quality. |

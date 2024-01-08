@@ -56,9 +56,9 @@
 | unicorn/no-this-assignment | off |   **Reasoning**:Arbitrary. |
 | unicorn/no-typeof-undefined | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/no-unnecessary-await | error |   **Reasoning**:Code quality. |
+| unicorn/no-unnecessary-polyfills | off |   **Reasoning**:Project specific. |
 | unicorn/no-unreadable-array-destructuring | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/no-unreadable-iife | error |   **Reasoning**:Readability and simplicity. |
-| unicorn/no-unsafe-regex | off |   **Reasoning**:Covered by regexp plugin. |
 | unicorn/no-unused-properties | warn |   **Reasoning**:Code quality. |
 | unicorn/no-useless-fallback-in-spread | error |   **Reasoning**:Code quality. |
 | unicorn/no-useless-length-check | error |   **Reasoning**:Readability and simplicity. |
@@ -76,6 +76,7 @@
 | unicorn/prefer-array-index-of | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/prefer-array-some | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/prefer-at | off |   **Reasoning**:Arbitrary. |
+| unicorn/prefer-blob-reading-methods | error |   **Reasoning**:Code quality. |
 | unicorn/prefer-code-point | error |   **Reasoning**:Code quality. |
 | unicorn/prefer-date-now | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/prefer-default-parameters | error |   **Reasoning**:Readability and simplicity. |
