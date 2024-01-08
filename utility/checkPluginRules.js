@@ -2,6 +2,7 @@ import chalk from 'chalk';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import cleanRules from './clean/cleanRules.js';
+import checkValues from './process/checkValues.js';
 import getAddedRules from './process/getAddedRules.js';
 import mergeRules from './process/mergeRules.js';
 import onEnterContinue from './output/onEnterContinue.js';
@@ -64,6 +65,9 @@ const processConfig = (config, index, configName) => {
 	const [externalRules, descriptions, deprecated] =
 		processPluginRules(config);
 
+	const badValues = checkValues(localRules);
+	const badValuesCount = Object.keys(badValues).length;
+
 	const [removedRules, removedRuleCount] =
 		mergeRules(externalRules, localRules, deprecated, pluginNames, allRules);
 
@@ -81,7 +85,11 @@ const processConfig = (config, index, configName) => {
 			configName
 		};
 	}
-	else if (addedRuleCount !== 0 || removedRuleCount !== 0) {
+	else if (
+		addedRuleCount !== 0 ||
+		removedRuleCount !== 0 ||
+		badValuesCount !== 0
+	) {
 		const name = config.plugins ?
 			`${ chalk.yellow(configName) } in ${ chalk.cyan(Object.keys(config.plugins).join(' and ')) }` :
 			`${ chalk.yellow(configName) } at index ${ chalk.cyan(index) }`;
@@ -99,6 +107,13 @@ const processConfig = (config, index, configName) => {
 			prettyPrint(
 				`${ chalk.redBright('- Removed') } rules for ${ name }:`,
 				cleanRules(removedRules)
+			);
+		}
+
+		if (badValuesCount) {
+			prettyPrint(
+				`${ chalk.redBright('- Bad values') } for ${ name }:`,
+				badValues
 			);
 		}
 	}

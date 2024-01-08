@@ -98,10 +98,10 @@ const lucid = [
 			'**/*.spec.mjs'
 		],
 		rules: {
-			'consistent-this': 0,
-			'init-declarations': 0,
-			'no-new': 0,
-			'unicorn/prevent-abbreviations': 0
+			'consistent-this': 'off',
+			'init-declarations': 'off',
+			'no-new': 'off',
+			'unicorn/prevent-abbreviations': 'off'
 		}
 	},
 	{
@@ -111,7 +111,7 @@ const lucid = [
 			'**/*.bench.mjs'
 		],
 		rules: {
-			'no-unused-vars': 0
+			'no-unused-vars': 'off'
 		}
 	}
 ];

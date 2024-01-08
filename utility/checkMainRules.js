@@ -1,5 +1,7 @@
+import chalk from 'chalk';
 import config from '../index.js';
 import eslintRules from '../node_modules/eslint/lib/rules/index.js';
+import checkValues from './process/checkValues.js';
 import getAddedRules from './process/getAddedRules.js';
 import mergeRules from './process/mergeRules.js';
 import prettyPrint from './output/prettyPrint.js';
@@ -14,6 +16,9 @@ const isComments = argv.includes('--comments');
 const [externalRules, descriptions, deprecated] =
 	processExternalRules(eslintRules, '', isComments);
 
+const badValues = checkValues(localRules);
+const badValuesCount = Object.keys(badValues).length;
+
 const [removedRules, removedRuleCount] =
 	mergeRules(externalRules, localRules, deprecated);
 
@@ -24,17 +29,34 @@ if (isComments) {
 	await printComments(externalRules, descriptions, 'core');
 	process.exit(0);
 }
-else if (addedRuleCount !== 0 || removedRuleCount !== 0) {
+else if (
+	addedRuleCount !== 0 ||
+	removedRuleCount !== 0 ||
+	badValuesCount !== 0
+) {
 	if (isTest) {
 		throw new Error(`Core ESLint rules out of date, added ${ addedRuleCount } and removed ${ removedRuleCount }`);
 	}
 
 	if (addedRuleCount !== 0) {
-		prettyPrint('Added rules:', addedRules);
+		prettyPrint(
+			`${ chalk.green('- Added') } Core rules:`,
+			addedRules
+		);
 	}
 
 	if (removedRuleCount !== 0) {
-		prettyPrint('Removed rules:', removedRules);
+		prettyPrint(
+			`${ chalk.redBright('- Removed') } Core rules:`,
+			removedRules
+		);
+	}
+
+	if (badValuesCount !== 0) {
+		prettyPrint(
+			`${ chalk.redBright('- Bad values') } for ${ name }:`,
+			badValues
+		);
 	}
 }
 else {

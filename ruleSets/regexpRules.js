@@ -347,85 +347,85 @@ export default {
 		 * @property regexp/prefer-d=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-d': 2,
+		'regexp/prefer-d': 'error',
 
 		/**
 		 * @property regexp/prefer-escape-replacement-dollar-char=error - Code quality.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-escape-replacement-dollar-char': 2,
+		'regexp/prefer-escape-replacement-dollar-char': 'error',
 
 		/**
 		 * @property regexp/prefer-lookaround=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-lookaround': 2,
+		'regexp/prefer-lookaround': 'error',
 
 		/**
 		 * @property regexp/prefer-named-backreference=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-named-backreference': 2,
+		'regexp/prefer-named-backreference': 'error',
 
 		/**
 		 * @property regexp/prefer-named-capture-group=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-named-capture-group': 2,
+		'regexp/prefer-named-capture-group': 'error',
 
 		/**
 		 * @property regexp/prefer-named-replacement=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-named-replacement': 2,
+		'regexp/prefer-named-replacement': 'error',
 
 		/**
 		 * @property regexp/prefer-plus-quantifier=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-plus-quantifier': 2,
+		'regexp/prefer-plus-quantifier': 'error',
 
 		/**
 		 * @property regexp/prefer-predefined-assertion=error - Code quality.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-predefined-assertion': 2,
+		'regexp/prefer-predefined-assertion': 'error',
 
 		/**
 		 * @property regexp/prefer-quantifier=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-quantifier': 2,
+		'regexp/prefer-quantifier': 'error',
 
 		/**
 		 * @property regexp/prefer-question-quantifier=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-question-quantifier': 2,
+		'regexp/prefer-question-quantifier': 'error',
 
 		/**
 		 * @property regexp/prefer-range=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-range': 2,
+		'regexp/prefer-range': 'error',
 
 		/**
 		 * @property regexp/prefer-regexp-exec=error - Performance.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-regexp-exec': 2,
+		'regexp/prefer-regexp-exec': 'error',
 
 		/**
 		 * @property regexp/prefer-regexp-test=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-regexp-test': 2,
+		'regexp/prefer-regexp-test': 'error',
 
 		/**
 		 * @property regexp/prefer-result-array-groups=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-result-array-groups': 2,
+		'regexp/prefer-result-array-groups': 'error',
 
 		/**
 		 * @property regexp/prefer-set-operation=error - Readability and simplicity.
@@ -437,19 +437,19 @@ export default {
 		 * @property regexp/prefer-star-quantifier=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-star-quantifier': 2,
+		'regexp/prefer-star-quantifier': 'error',
 
 		/**
 		 * @property regexp/prefer-unicode-codepoint-escapes=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-unicode-codepoint-escapes': 2,
+		'regexp/prefer-unicode-codepoint-escapes': 'error',
 
 		/**
 		 * @property regexp/prefer-w=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/prefer-w': 2,
+		'regexp/prefer-w': 'error',
 
 		/**
 		 * @property regexp/require-unicode-regexp=off - Covered by regexp/no-misleading-unicode-character.
@@ -473,36 +473,36 @@ export default {
 		 * @property regexp/sort-alternatives=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/sort-alternatives': 2,
+		'regexp/sort-alternatives': 'error',
 
 		/**
 		 * @property regexp/sort-character-class-elements=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/sort-character-class-elements': 2,
+		'regexp/sort-character-class-elements': 'error',
 
 		/**
 		 * @property regexp/sort-flags=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/sort-flags': 2,
+		'regexp/sort-flags': 'error',
 
 		/**
 		 * @property regexp/strict=error - Code quality.
 		 * @memberof regexp
 		 **/
-		'regexp/strict': 2,
+		'regexp/strict': 'error',
 
 		/**
 		 * @property regexp/unicode-escape=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/unicode-escape': 2,
+		'regexp/unicode-escape': 'error',
 
 		/**
 		 * @property regexp/use-ignore-case=error - Readability and simplicity.
 		 * @memberof regexp
 		 **/
-		'regexp/use-ignore-case': 2
+		'regexp/use-ignore-case': 'error'
 	}
 };

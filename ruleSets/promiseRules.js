@@ -113,6 +113,6 @@ export default {
 		 * @property promise/valid-params=error - Code quality.
 		 * @memberof promise
 		 **/
-		'promise/valid-params': 2
+		'promise/valid-params': 'error'
 	}
 };

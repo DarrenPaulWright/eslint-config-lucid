@@ -489,25 +489,25 @@ export default {
 		 * @property unicorn/prefer-math-trunc=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-math-trunc': 2,
+		'unicorn/prefer-math-trunc': 'error',
 
 		/**
 		 * @property unicorn/prefer-modern-dom-apis=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-modern-dom-apis': 2,
+		'unicorn/prefer-modern-dom-apis': 'error',
 
 		/**
 		 * @property unicorn/prefer-modern-math-apis=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-modern-math-apis': 2,
+		'unicorn/prefer-modern-math-apis': 'error',
 
 		/**
 		 * @property unicorn/prefer-module=error - Consistency.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-module': 2,
+		'unicorn/prefer-module': 'error',
 
 		/**
 		 * @property unicorn/prefer-native-coercion-functions=off - Arbitrary.
@@ -519,13 +519,13 @@ export default {
 		 * @property unicorn/prefer-negative-index=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-negative-index': 2,
+		'unicorn/prefer-negative-index': 'error',
 
 		/**
 		 * @property unicorn/prefer-node-protocol=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-node-protocol': 2,
+		'unicorn/prefer-node-protocol': 'error',
 
 		/**
 		 * @property unicorn/prefer-number-properties=off - Arbitrary.
@@ -543,19 +543,19 @@ export default {
 		 * @property unicorn/prefer-optional-catch-binding=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-optional-catch-binding': 2,
+		'unicorn/prefer-optional-catch-binding': 'error',
 
 		/**
 		 * @property unicorn/prefer-prototype-methods=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-prototype-methods': 2,
+		'unicorn/prefer-prototype-methods': 'error',
 
 		/**
 		 * @property unicorn/prefer-query-selector=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-query-selector': 2,
+		'unicorn/prefer-query-selector': 'error',
 
 		/**
 		 * @property unicorn/prefer-reflect-apply=off - Arbitrary.
@@ -591,37 +591,37 @@ export default {
 		 * @property unicorn/prefer-string-replace-all=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-string-replace-all': 2,
+		'unicorn/prefer-string-replace-all': 'error',
 
 		/**
 		 * @property unicorn/prefer-string-slice=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-string-slice': 2,
+		'unicorn/prefer-string-slice': 'error',
 
 		/**
 		 * @property unicorn/prefer-string-starts-ends-with=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-string-starts-ends-with': 2,
+		'unicorn/prefer-string-starts-ends-with': 'error',
 
 		/**
 		 * @property unicorn/prefer-string-trim-start-end=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-string-trim-start-end': 2,
+		'unicorn/prefer-string-trim-start-end': 'error',
 
 		/**
 		 * @property unicorn/prefer-switch=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-switch': 2,
+		'unicorn/prefer-switch': 'error',
 
 		/**
 		 * @property unicorn/prefer-ternary=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-ternary': 2,
+		'unicorn/prefer-ternary': 'error',
 
 		/**
 		 * @property unicorn/prefer-top-level-await=off - Covered by promise plugin.
@@ -633,14 +633,14 @@ export default {
 		 * @property unicorn/prefer-type-error=error - Code quality.
 		 * @memberof unicorn
 		 **/
-		'unicorn/prefer-type-error': 2,
+		'unicorn/prefer-type-error': 'error',
 
 		/**
 		 * @property unicorn/prevent-abbreviations=error - Readability and simplicity. Removes ambiguity for future developers.
 		 * @memberof unicorn
 		 **/
 		'unicorn/prevent-abbreviations': [
-			2, {
+			'error', {
 				replacements: {
 					arg: false,
 					args: false,
@@ -661,25 +661,25 @@ export default {
 		 * @property unicorn/relative-url-style=error - Readability and simplicity. MAintains consistent url structure to imports.
 		 * @memberof unicorn
 		 **/
-		'unicorn/relative-url-style': [2, 'always'],
+		'unicorn/relative-url-style': ['error', 'always'],
 
 		/**
 		 * @property unicorn/require-array-join-separator=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/require-array-join-separator': 2,
+		'unicorn/require-array-join-separator': 'error',
 
 		/**
 		 * @property unicorn/require-number-to-fixed-digits-argument=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/require-number-to-fixed-digits-argument': 2,
+		'unicorn/require-number-to-fixed-digits-argument': 'error',
 
 		/**
 		 * @property unicorn/require-post-message-target-origin=error - Code quality.
 		 * @memberof unicorn
 		 **/
-		'unicorn/require-post-message-target-origin': 2,
+		'unicorn/require-post-message-target-origin': 'error',
 
 		/**
 		 * @property unicorn/string-content=off - Arbitrary.
@@ -691,7 +691,7 @@ export default {
 		 * @property unicorn/switch-case-braces=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/switch-case-braces': 2,
+		'unicorn/switch-case-braces': 'error',
 
 		/**
 		 * @property unicorn/template-indent=off - Arbitrary.
@@ -703,12 +703,12 @@ export default {
 		 * @property unicorn/text-encoding-identifier-case=error - Code quality.
 		 * @memberof unicorn
 		 **/
-		'unicorn/text-encoding-identifier-case': 2,
+		'unicorn/text-encoding-identifier-case': 'error',
 
 		/**
 		 * @property unicorn/throw-new-error=error - Readability and simplicity.
 		 * @memberof unicorn
 		 **/
-		'unicorn/throw-new-error': 2
+		'unicorn/throw-new-error': 'error'
 	}
 };
