@@ -37,7 +37,7 @@ export default {
 		'security/detect-child-process': 'error',
 
 		/**
-		 * @property security/detect-disable-mustache-escape=error - Security.
+		 * @property security/detect-disable-mustache-escape=error - App security.
 		 * @memberOf security
 		 **/
 		'security/detect-disable-mustache-escape': 'error',
@@ -55,25 +55,25 @@ export default {
 		'security/detect-new-buffer': 'warn',
 
 		/**
-		 * @property security/detect-no-csrf-before-method-override=warn - Security.
+		 * @property security/detect-no-csrf-before-method-override=warn - App security.
 		 * @memberOf security
 		 **/
 		'security/detect-no-csrf-before-method-override': 'warn',
 
 		/**
-		 * @property security/detect-non-literal-fs-filename=warn - Security.
+		 * @property security/detect-non-literal-fs-filename=warn - App security.
 		 * @memberOf security
 		 **/
 		'security/detect-non-literal-fs-filename': 'warn',
 
 		/**
-		 * @property security/detect-non-literal-regexp=warn - Security.
+		 * @property security/detect-non-literal-regexp=warn - App security.
 		 * @memberOf security
 		 **/
 		'security/detect-non-literal-regexp': 'warn',
 
 		/**
-		 * @property security/detect-non-literal-require=warn - Security.
+		 * @property security/detect-non-literal-require=warn - App security.
 		 * @memberOf security
 		 **/
 		'security/detect-non-literal-require': 'warn',
@@ -85,7 +85,7 @@ export default {
 		'security/detect-object-injection': 'off',
 
 		/**
-		 * @property security/detect-possible-timing-attacks=warn - Security.
+		 * @property security/detect-possible-timing-attacks=warn - App security.
 		 * @memberOf security
 		 **/
 		'security/detect-possible-timing-attacks': 'warn',

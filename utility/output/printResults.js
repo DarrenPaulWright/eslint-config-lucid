@@ -14,6 +14,6 @@ const printResults = (errors, isTest) => {
 			throw new Error('ESLint rules out of date');
 		}
 	}
-}
+};
 
 export default printResults;
