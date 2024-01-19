@@ -2,11 +2,12 @@ import chalk from 'chalk';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import cleanRules from './clean/cleanRules.js';
+import printMain from './output/printMain.js';
+import printResults from './output/printResults.js';
 import checkValues from './process/checkValues.js';
 import getAddedRules from './process/getAddedRules.js';
 import mergeRules from './process/mergeRules.js';
 import onEnterContinue from './output/onEnterContinue.js';
-import prettyPrint from './output/prettyPrint.js';
 import printComments from './output/printComments.js';
 import processExternalRules from './process/processExternalRules.js';
 import ruleLabel from './process/ruleLabel.js';
@@ -97,28 +98,7 @@ const processConfig = (config, index, configName) => {
 			`${ chalk.yellow(configName) } in ${ chalk.cyan(Object.keys(config.plugins).join(' and ')) }` :
 			`${ chalk.yellow(configName) } at index ${ chalk.cyan(index) }`;
 
-		errors.push(`ESLint plugin rules for ${ name } are out of date, added ${ addedRuleCount } and removed ${ removedRuleCount }`);
-
-		if (addedRuleCount !== 0) {
-			prettyPrint(
-				`${ chalk.green('+ Added') } rules for ${ name }:`,
-				addedRules
-			);
-		}
-
-		if (removedRuleCount !== 0) {
-			prettyPrint(
-				`${ chalk.redBright('- Removed') } rules for ${ name }:`,
-				cleanRules(removedRules)
-			);
-		}
-
-		if (badValuesCount) {
-			prettyPrint(
-				`${ chalk.redBright('- Bad values') } for ${ name }:`,
-				badValues
-			);
-		}
+		errors.push(printMain(name, addedRules, removedRules, badValues));
 	}
 };
 
@@ -148,13 +128,6 @@ if (isComments) {
 
 	process.exit(0);
 }
-else if (errors.length === 0) {
-	console.log('ESLint plugin rules up to date.');
-}
-else if (isTest) {
-	console.log('');
-	errors.forEach((error) => {
-		console.log(error);
-	});
-	throw new Error('ESLint plugin rules out of date');
+else {
+	printResults(errors, isTest);
 }

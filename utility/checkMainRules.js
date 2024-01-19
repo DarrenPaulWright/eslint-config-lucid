@@ -1,6 +1,8 @@
 import chalk from 'chalk';
 import config from '../index.js';
 import eslintRules from '../node_modules/eslint/lib/rules/index.js';
+import printMain from './output/printMain.js';
+import printResults from './output/printResults.js';
 import checkValues from './process/checkValues.js';
 import getAddedRules from './process/getAddedRules.js';
 import mergeRules from './process/mergeRules.js';
@@ -12,6 +14,7 @@ const argv = process.argv;
 const localRules = config[1].rules;
 const isTest = argv.includes('--test');
 const isComments = argv.includes('--comments');
+const errors = [];
 
 const [externalRules, descriptions, deprecated] =
 	processExternalRules(eslintRules, '', isComments);
@@ -34,30 +37,8 @@ else if (
 	removedRuleCount !== 0 ||
 	badValuesCount !== 0
 ) {
-	if (isTest) {
-		throw new Error(`Core ESLint rules out of date, added ${ addedRuleCount } and removed ${ removedRuleCount }`);
-	}
-
-	if (addedRuleCount !== 0) {
-		prettyPrint(
-			`${ chalk.green('- Added') } Core rules:`,
-			addedRules
-		);
-	}
-
-	if (removedRuleCount !== 0) {
-		prettyPrint(
-			`${ chalk.redBright('- Removed') } Core rules:`,
-			removedRules
-		);
-	}
-
-	if (badValuesCount !== 0) {
-		prettyPrint(
-			`${ chalk.redBright('- Bad values') } in Core:`,
-			badValues
-		);
-	}
+	errors.push(printMain('Core', addedRules, removedRules, badValues));
+	printResults(errors, isTest);
 }
 else {
 	console.log('Core ESLint rules up to date.');
