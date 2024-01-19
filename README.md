@@ -59,8 +59,11 @@ include researched psychological principals in your issue or pull request.
 <dt><a href="docs/core.md">core</a> : <code>object</code></dt>
 <dd><p>Core ESLint rules.</p>
 </dd>
+<dt><a href="docs/you-dont-need-lodash-underscore.md">you-dont-need-lodash-underscore</a> : <code>object</code></dt>
+<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-you-dont-need-lodash-underscore">eslint-plugin-you-dont-need-lodash-underscore</a>.</p>
+</dd>
 <dt><a href="docs/node.md">node</a> : <code>object</code></dt>
-<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-n">eslint-plugin-n</a>. Not that .js files are set up for es module syntax just like .cjs.</p>
+<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-n">eslint-plugin-n</a>. Note that .js files are set up for es module syntax just like .cjs.</p>
 </dd>
 <dt><a href="docs/prefer-arrow-functions.md">prefer-arrow-functions</a> : <code>object</code></dt>
 <dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-prefer-arrow-functions">eslint-plugin-prefer-arrow-functions</a>.</p>

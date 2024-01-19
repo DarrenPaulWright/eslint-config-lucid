@@ -5,7 +5,7 @@
 
 <br><a name="node"></a>
 
-## node : <code>object</code>> ESLint rules for [eslint-plugin-n](https://www.npmjs.com/package/eslint-plugin-n). Not that .js files are set up for es module syntax just like .cjs.
+## node : <code>object</code>> ESLint rules for [eslint-plugin-n](https://www.npmjs.com/package/eslint-plugin-n). Note that .js files are set up for es module syntax just like .cjs.
 
 **Properties**
 

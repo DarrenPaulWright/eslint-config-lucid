@@ -18,14 +18,14 @@
 | security/detect-bidi-characters | error |   **Reasoning**:Code quality. |
 | security/detect-buffer-noassert | error |   **Reasoning**:Code quality. |
 | security/detect-child-process | error |   **Reasoning**:Code quality. |
-| security/detect-disable-mustache-escape | error |   **Reasoning**:Security. |
+| security/detect-disable-mustache-escape | error |   **Reasoning**:App security. |
 | security/detect-eval-with-expression | off |   **Reasoning**:Covered by no-eval. |
 | security/detect-new-buffer | warn |   **Reasoning**:Code quality. |
-| security/detect-no-csrf-before-method-override | warn |   **Reasoning**:Security. |
-| security/detect-non-literal-fs-filename | warn |   **Reasoning**:Security. |
-| security/detect-non-literal-regexp | warn |   **Reasoning**:Security. |
-| security/detect-non-literal-require | warn |   **Reasoning**:Security. |
+| security/detect-no-csrf-before-method-override | warn |   **Reasoning**:App security. |
+| security/detect-non-literal-fs-filename | warn |   **Reasoning**:App security. |
+| security/detect-non-literal-regexp | warn |   **Reasoning**:App security. |
+| security/detect-non-literal-require | warn |   **Reasoning**:App security. |
 | security/detect-object-injection | off |   **Reasoning**:Arbitrary. |
-| security/detect-possible-timing-attacks | warn |   **Reasoning**:Security. |
+| security/detect-possible-timing-attacks | warn |   **Reasoning**:App security. |
 | security/detect-pseudoRandomBytes | warn |   **Reasoning**:Code quality. |
 | security/detect-unsafe-regex | off |   **Reasoning**:Covered by regexp plugin. |
