@@ -104,6 +104,7 @@ const lucid = [
 		rules: {
 			'consistent-this': 'off',
 			'init-declarations': 'off',
+			'max-nested-callbacks': 'off',
 			'no-new': 'off',
 			'unicorn/prevent-abbreviations': 'off'
 		}

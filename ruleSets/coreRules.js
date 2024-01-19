@@ -330,10 +330,10 @@ export default {
 		 * Enforce a maximum depth that callbacks can be nested
 		 * @see {@link https://eslint.org/docs/rules/max-nested-callbacks}
 		 *
-		 * @property max-nested-callbacks=off - Arbitrary, prefer complexity rule.
+		 * @property max-nested-callbacks=warn - Readability and simplicity.
 		 * @memberOf core
 		 **/
-		'max-nested-callbacks': 'off',
+		'max-nested-callbacks': ['warn', { max: 5 }],
 
 		/**
 		 * Enforce a maximum number of parameters in function definitions
@@ -342,12 +342,7 @@ export default {
 		 * @property max-params=error - Readability and simplicity.
 		 * @memberOf core
 		 **/
-		'max-params': [
-			'error',
-			{
-				max: 5
-			}
-		],
+		'max-params': ['error', { max: 5 }],
 
 		/**
 		 * Enforce a maximum number of statements allowed in function blocks
