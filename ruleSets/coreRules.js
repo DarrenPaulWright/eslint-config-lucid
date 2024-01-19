@@ -2,7 +2,7 @@
  * Core ESLint rules.
  *
  * @namespace core
- * @property files .js, .jsx, .mjs, .cjs, .ts, .tsx
+ * @property files - .js, .jsx, .mjs, .cjs, .ts, .tsx
  **/
 export default {
 	files: [
@@ -19,7 +19,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/accessor-pairs}
 		 *
 		 * @property accessor-pairs=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'accessor-pairs': 'off',
 
@@ -28,7 +28,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/array-callback-return}
 		 *
 		 * @property array-callback-return=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'array-callback-return': 'error',
 
@@ -37,7 +37,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/arrow-body-style}
 		 *
 		 * @property arrow-body-style=off - Doesn't account for line length restrictions.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'arrow-body-style': 'off',
 
@@ -46,7 +46,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/block-scoped-var}
 		 *
 		 * @property block-scoped-var=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'block-scoped-var': 'error',
 
@@ -55,7 +55,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/camelcase}
 		 *
 		 * @property camelcase=off - Covered by babel/camelcase.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		camelcase: 'off',
 
@@ -64,7 +64,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/capitalized-comments}
 		 *
 		 * @property capitalized-comments=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'capitalized-comments': 'off',
 
@@ -73,7 +73,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/class-methods-use-this}
 		 *
 		 * @property class-methods-use-this=warn - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'class-methods-use-this': 'warn',
 
@@ -82,7 +82,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/complexity}
 		 *
 		 * @property complexity=warn - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		complexity: ['warn', 10],
 
@@ -91,7 +91,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/consistent-return}
 		 *
 		 * @property consistent-return=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'consistent-return': 'error',
 
@@ -100,7 +100,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/consistent-this}
 		 *
 		 * @property consistent-this=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'consistent-this': ['error', 'self'],
 
@@ -109,7 +109,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/constructor-super}
 		 *
 		 * @property constructor-super=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'constructor-super': 'error',
 
@@ -118,7 +118,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/curly}
 		 *
 		 * @property curly=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		curly: 'error',
 
@@ -127,7 +127,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/default-case}
 		 *
 		 * @property default-case=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'default-case': 'off',
 
@@ -136,7 +136,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/default-case-last}
 		 *
 		 * @property default-case-last=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'default-case-last': 'error',
 
@@ -145,7 +145,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/default-param-last}
 		 *
 		 * @property default-param-last=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'default-param-last': 'error',
 
@@ -154,7 +154,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/dot-notation}
 		 *
 		 * @property dot-notation=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'dot-notation': 'error',
 
@@ -163,7 +163,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/eqeqeq}
 		 *
 		 * @property eqeqeq=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		eqeqeq: 'error',
 
@@ -172,7 +172,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/for-direction}
 		 *
 		 * @property for-direction=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'for-direction': 'error',
 
@@ -181,7 +181,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/func-name-matching}
 		 *
 		 * @property func-name-matching=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'func-name-matching': 'error',
 
@@ -190,7 +190,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/func-names}
 		 *
 		 * @property func-names=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'func-names': ['error', 'never'],
 
@@ -199,7 +199,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/func-style}
 		 *
 		 * @property func-style=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'func-style': 'error',
 
@@ -208,7 +208,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/getter-return}
 		 *
 		 * @property getter-return=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'getter-return': 'error',
 
@@ -217,7 +217,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/grouped-accessor-pairs}
 		 *
 		 * @property grouped-accessor-pairs=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'grouped-accessor-pairs': ['error', 'getBeforeSet'],
 
@@ -226,7 +226,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/guard-for-in}
 		 *
 		 * @property guard-for-in=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'guard-for-in': 'off',
 
@@ -235,7 +235,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/id-denylist}
 		 *
 		 * @property id-denylist=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'id-denylist': 'off',
 
@@ -244,7 +244,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/id-length}
 		 *
 		 * @property id-length=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'id-length': 'off',
 
@@ -253,7 +253,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/id-match}
 		 *
 		 * @property id-match=off - Covered by camelcase.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'id-match': 'off',
 
@@ -262,7 +262,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/init-declarations}
 		 *
 		 * @property init-declarations=warn - Readability and simplicity and performance.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'init-declarations': 'warn',
 
@@ -271,7 +271,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/line-comment-position}
 		 *
 		 * @property line-comment-position=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'line-comment-position': 'off',
 
@@ -280,7 +280,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/logical-assignment-operators}
 		 *
 		 * @property logical-assignment-operators=off - enforceForIfStatements.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'logical-assignment-operators': [
 			'error',
@@ -295,7 +295,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/max-classes-per-file}
 		 *
 		 * @property max-classes-per-file=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'max-classes-per-file': 'error',
 
@@ -304,7 +304,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/max-depth}
 		 *
 		 * @property max-depth=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'max-depth': 'error',
 
@@ -313,7 +313,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/max-lines}
 		 *
 		 * @property max-lines=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'max-lines': 'off',
 
@@ -322,7 +322,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/max-lines-per-function}
 		 *
 		 * @property max-lines-per-function=off - Arbitrary, prefer complexity rule.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'max-lines-per-function': 'off',
 
@@ -331,7 +331,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/max-nested-callbacks}
 		 *
 		 * @property max-nested-callbacks=off - Arbitrary, prefer complexity rule.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'max-nested-callbacks': 'off',
 
@@ -340,7 +340,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/max-params}
 		 *
 		 * @property max-params=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'max-params': [
 			'error',
@@ -354,7 +354,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/max-statements}
 		 *
 		 * @property max-statements=off - Arbitrary, prefer complexity rule.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'max-statements': 'off',
 
@@ -363,7 +363,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/multiline-comment-style}
 		 *
 		 * @property multiline-comment-style=off - Covered by jsdoc.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'multiline-comment-style': 'off',
 
@@ -372,7 +372,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/new-cap}
 		 *
 		 * @property new-cap=off - Covered by babel/new-cap.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'new-cap': 'off',
 
@@ -381,7 +381,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-alert}
 		 *
 		 * @property no-alert=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-alert': 'off',
 
@@ -390,7 +390,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-array-constructor}
 		 *
 		 * @property no-array-constructor=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-array-constructor': 'error',
 
@@ -399,7 +399,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-async-promise-executor}
 		 *
 		 * @property no-async-promise-executor=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-async-promise-executor': 'error',
 
@@ -408,7 +408,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-await-in-loop}
 		 *
 		 * @property no-await-in-loop=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-await-in-loop': 'off',
 
@@ -417,7 +417,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-bitwise}
 		 *
 		 * @property no-bitwise=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-bitwise': 'off',
 
@@ -426,7 +426,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-caller}
 		 *
 		 * @property no-caller=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-caller': 'error',
 
@@ -435,7 +435,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-case-declarations}
 		 *
 		 * @property no-case-declarations=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-case-declarations': 'error',
 
@@ -444,7 +444,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-class-assign}
 		 *
 		 * @property no-class-assign=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-class-assign': 'error',
 
@@ -453,7 +453,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-compare-neg-zero}
 		 *
 		 * @property no-compare-neg-zero=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-compare-neg-zero': 'error',
 
@@ -462,7 +462,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-cond-assign}
 		 *
 		 * @property no-cond-assign=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-cond-assign': 'error',
 
@@ -471,7 +471,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-console}
 		 *
 		 * @property no-console=off - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-console': [
 			'warn',
@@ -485,7 +485,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-const-assign}
 		 *
 		 * @property no-const-assign=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-const-assign': 'error',
 
@@ -494,7 +494,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-constant-binary-expression}
 		 *
 		 * @property no-constant-binary-expression=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-constant-binary-expression': 'error',
 
@@ -503,7 +503,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-constant-condition}
 		 *
 		 * @property no-constant-condition=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-constant-condition': 'error',
 
@@ -512,7 +512,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-constructor-return}
 		 *
 		 * @property no-constructor-return=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-constructor-return': 'error',
 
@@ -521,7 +521,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-continue}
 		 *
 		 * @property no-continue=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-continue': 'error',
 
@@ -530,7 +530,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-control-regex}
 		 *
 		 * @property no-control-regex=off - Covered by regexp/no-control-character.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-control-regex': 'off',
 
@@ -539,7 +539,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-debugger}
 		 *
 		 * @property no-debugger=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-debugger': 'error',
 
@@ -548,7 +548,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-delete-var}
 		 *
 		 * @property no-delete-var=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-delete-var': 'error',
 
@@ -557,7 +557,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-div-regex}
 		 *
 		 * @property no-div-regex=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-div-regex': 'error',
 
@@ -566,7 +566,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-dupe-args}
 		 *
 		 * @property no-dupe-args=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-dupe-args': 'error',
 
@@ -575,7 +575,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-dupe-class-members}
 		 *
 		 * @property no-dupe-class-members=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-dupe-class-members': 'error',
 
@@ -584,7 +584,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-dupe-else-if}
 		 *
 		 * @property no-dupe-else-if=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-dupe-else-if': 'error',
 
@@ -593,7 +593,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-dupe-keys}
 		 *
 		 * @property no-dupe-keys=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-dupe-keys': 'error',
 
@@ -602,7 +602,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-duplicate-case}
 		 *
 		 * @property no-duplicate-case=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-duplicate-case': 'error',
 
@@ -611,7 +611,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-duplicate-imports}
 		 *
 		 * @property no-duplicate-imports=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-duplicate-imports': 'error',
 
@@ -620,7 +620,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-else-return}
 		 *
 		 * @property no-else-return=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-else-return': 'error',
 
@@ -629,7 +629,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-empty}
 		 *
 		 * @property no-empty=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-empty': 'error',
 
@@ -638,7 +638,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-empty-character-class}
 		 *
 		 * @property no-empty-character-class=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-empty-character-class': 'error',
 
@@ -647,7 +647,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-empty-function}
 		 *
 		 * @property no-empty-function=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-empty-function': 'error',
 
@@ -656,7 +656,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-empty-pattern}
 		 *
 		 * @property no-empty-pattern=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-empty-pattern': 'error',
 
@@ -665,7 +665,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-empty-static-block}
 		 *
 		 * @property no-empty-static-block=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-empty-static-block': 'error',
 
@@ -674,7 +674,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-eq-null}
 		 *
 		 * @property no-eq-null=off - Covered by eqeqeq.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-eq-null': 'off',
 
@@ -683,7 +683,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-eval}
 		 *
 		 * @property no-eval=error - Code quality and security.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-eval': 'error',
 
@@ -692,7 +692,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-ex-assign}
 		 *
 		 * @property no-ex-assign=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-ex-assign': 'error',
 
@@ -701,7 +701,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-extend-native}
 		 *
 		 * @property no-extend-native=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-extend-native': 'error',
 
@@ -710,7 +710,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-extra-bind}
 		 *
 		 * @property no-extra-bind=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-extra-bind': 'error',
 
@@ -719,7 +719,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-extra-boolean-cast}
 		 *
 		 * @property no-extra-boolean-cast=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-extra-boolean-cast': 'error',
 
@@ -728,7 +728,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-extra-label}
 		 *
 		 * @property no-extra-label=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-extra-label': 'error',
 
@@ -737,7 +737,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-fallthrough}
 		 *
 		 * @property no-fallthrough=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-fallthrough': 'error',
 
@@ -746,7 +746,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-func-assign}
 		 *
 		 * @property no-func-assign=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-func-assign': 'error',
 
@@ -755,7 +755,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-global-assign}
 		 *
 		 * @property no-global-assign=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-global-assign': 'error',
 
@@ -764,7 +764,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-implicit-coercion}
 		 *
 		 * @property no-implicit-coercion=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-implicit-coercion': 'error',
 
@@ -773,7 +773,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-implicit-globals}
 		 *
 		 * @property no-implicit-globals=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-implicit-globals': 'error',
 
@@ -782,7 +782,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-implied-eval}
 		 *
 		 * @property no-implied-eval=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-implied-eval': 'error',
 
@@ -791,7 +791,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-import-assign}
 		 *
 		 * @property no-import-assign=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-import-assign': 'error',
 
@@ -800,7 +800,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-inline-comments}
 		 *
 		 * @property no-inline-comments=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-inline-comments': 'off',
 
@@ -809,7 +809,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-inner-declarations}
 		 *
 		 * @property no-inner-declarations=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-inner-declarations': 'error',
 
@@ -818,7 +818,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-invalid-regexp}
 		 *
 		 * @property no-invalid-regexp=off - Covered by regexp/no-invalid-regexp.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-invalid-regexp': 'off',
 
@@ -827,7 +827,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-invalid-this}
 		 *
 		 * @property no-invalid-this=off - Covered by babel/no-invalid-this.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-invalid-this': 'off',
 
@@ -836,7 +836,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-irregular-whitespace}
 		 *
 		 * @property no-irregular-whitespace=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-irregular-whitespace': 'error',
 
@@ -845,7 +845,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-iterator}
 		 *
 		 * @property no-iterator=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-iterator': 'error',
 
@@ -854,7 +854,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-label-var}
 		 *
 		 * @property no-label-var=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-label-var': 'error',
 
@@ -863,7 +863,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-labels}
 		 *
 		 * @property no-labels=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-labels': 'error',
 
@@ -872,7 +872,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-lone-blocks}
 		 *
 		 * @property no-lone-blocks=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-lone-blocks': 'error',
 
@@ -881,7 +881,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-lonely-if}
 		 *
 		 * @property no-lonely-if=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-lonely-if': 'error',
 
@@ -890,7 +890,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-loop-func}
 		 *
 		 * @property no-loop-func=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-loop-func': 'error',
 
@@ -899,7 +899,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-loss-of-precision}
 		 *
 		 * @property no-loss-of-precision=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-loss-of-precision': 'error',
 
@@ -908,7 +908,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-magic-numbers}
 		 *
 		 * @property no-magic-numbers=off - Too many false positives.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-magic-numbers': 'off',
 
@@ -917,7 +917,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-misleading-character-class}
 		 *
 		 * @property no-misleading-character-class=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-misleading-character-class': 'error',
 
@@ -926,7 +926,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-multi-assign}
 		 *
 		 * @property no-multi-assign=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-multi-assign': 'error',
 
@@ -935,7 +935,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-multi-str}
 		 *
 		 * @property no-multi-str=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-multi-str': 'error',
 
@@ -944,7 +944,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-negated-condition}
 		 *
 		 * @property no-negated-condition=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-negated-condition': 'error',
 
@@ -953,7 +953,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-nested-ternary}
 		 *
 		 * @property no-nested-ternary=off - Covered by unicorn/no-nested-ternary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-nested-ternary': 'off',
 
@@ -962,7 +962,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-new}
 		 *
 		 * @property no-new=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-new': 'error',
 
@@ -971,7 +971,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-new-func}
 		 *
 		 * @property no-new-func=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-new-func': 'error',
 
@@ -980,7 +980,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-new-native-nonconstructor}
 		 *
 		 * @property no-new-native-nonconstructor=off - Covered by unicorn/new-for-builtins.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-new-native-nonconstructor': 'off',
 
@@ -989,7 +989,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-new-symbol}
 		 *
 		 * @property no-new-symbol=off - Covered by unicorn/new-for-builtins.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-new-symbol': 'off',
 
@@ -998,7 +998,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-new-wrappers}
 		 *
 		 * @property no-new-wrappers=off - Covered by unicorn/new-for-builtins.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-new-wrappers': 'off',
 
@@ -1007,7 +1007,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-nonoctal-decimal-escape}
 		 *
 		 * @property no-nonoctal-decimal-escape=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-nonoctal-decimal-escape': 'error',
 
@@ -1016,7 +1016,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-obj-calls}
 		 *
 		 * @property no-obj-calls=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-obj-calls': 'error',
 
@@ -1025,7 +1025,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-object-constructor}
 		 *
 		 * @property no-object-constructor=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-object-constructor': 'error',
 
@@ -1034,7 +1034,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-octal}
 		 *
 		 * @property no-octal=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-octal': 'error',
 
@@ -1043,7 +1043,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-octal-escape}
 		 *
 		 * @property no-octal-escape=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-octal-escape': 'error',
 
@@ -1052,7 +1052,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-param-reassign}
 		 *
 		 * @property no-param-reassign=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-param-reassign': 'error',
 
@@ -1061,7 +1061,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-plusplus}
 		 *
 		 * @property no-plusplus=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-plusplus': 'off',
 
@@ -1070,7 +1070,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-promise-executor-return}
 		 *
 		 * @property no-promise-executor-return=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-promise-executor-return': 'error',
 
@@ -1079,7 +1079,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-proto}
 		 *
 		 * @property no-proto=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-proto': 'error',
 
@@ -1088,7 +1088,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-prototype-builtins}
 		 *
 		 * @property no-prototype-builtins=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-prototype-builtins': 'error',
 
@@ -1097,7 +1097,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-redeclare}
 		 *
 		 * @property no-redeclare=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-redeclare': 'error',
 
@@ -1106,7 +1106,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-regex-spaces}
 		 *
 		 * @property no-regex-spaces=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-regex-spaces': 'error',
 
@@ -1115,7 +1115,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-restricted-exports}
 		 *
 		 * @property no-restricted-exports=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-restricted-exports': 'off',
 
@@ -1124,7 +1124,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-restricted-globals}
 		 *
 		 * @property no-restricted-globals=off - Project specific.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-restricted-globals': 'off',
 
@@ -1133,7 +1133,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-restricted-imports}
 		 *
 		 * @property no-restricted-imports=off - Project specific.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-restricted-imports': 'off',
 
@@ -1142,7 +1142,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-restricted-properties}
 		 *
 		 * @property no-restricted-properties=off - Project specific.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-restricted-properties': 'off',
 
@@ -1151,7 +1151,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-restricted-syntax}
 		 *
 		 * @property no-restricted-syntax=off - Project specific.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-restricted-syntax': 'off',
 
@@ -1160,7 +1160,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-return-assign}
 		 *
 		 * @property no-return-assign=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-return-assign': 'error',
 
@@ -1169,7 +1169,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-script-url}
 		 *
 		 * @property no-script-url=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-script-url': 'error',
 
@@ -1178,7 +1178,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-self-assign}
 		 *
 		 * @property no-self-assign=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-self-assign': 'error',
 
@@ -1187,7 +1187,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-self-compare}
 		 *
 		 * @property no-self-compare=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-self-compare': 'error',
 
@@ -1196,7 +1196,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-sequences}
 		 *
 		 * @property no-sequences=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-sequences': 'error',
 
@@ -1205,7 +1205,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-setter-return}
 		 *
 		 * @property no-setter-return=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-setter-return': 'error',
 
@@ -1214,7 +1214,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-shadow}
 		 *
 		 * @property no-shadow=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-shadow': 'error',
 
@@ -1223,7 +1223,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-shadow-restricted-names}
 		 *
 		 * @property no-shadow-restricted-names=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-shadow-restricted-names': 'error',
 
@@ -1232,7 +1232,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-sparse-arrays}
 		 *
 		 * @property no-sparse-arrays=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-sparse-arrays': 'error',
 
@@ -1241,7 +1241,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-template-curly-in-string}
 		 *
 		 * @property no-template-curly-in-string=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-template-curly-in-string': 'error',
 
@@ -1250,7 +1250,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-ternary}
 		 *
 		 * @property no-ternary=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-ternary': 'off',
 
@@ -1259,7 +1259,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-this-before-super}
 		 *
 		 * @property no-this-before-super=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-this-before-super': 'error',
 
@@ -1268,7 +1268,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-throw-literal}
 		 *
 		 * @property no-throw-literal=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-throw-literal': 'error',
 
@@ -1277,7 +1277,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-undef}
 		 *
 		 * @property no-undef=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-undef': 'error',
 
@@ -1286,7 +1286,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-undef-init}
 		 *
 		 * @property no-undef-init=off - Covered by unicorn/no-useless-undefined.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-undef-init': 'off',
 
@@ -1295,7 +1295,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-undefined}
 		 *
 		 * @property no-undefined=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-undefined': 'off',
 
@@ -1304,7 +1304,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-underscore-dangle}
 		 *
 		 * @property no-underscore-dangle=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-underscore-dangle': 'off',
 
@@ -1313,7 +1313,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-unexpected-multiline}
 		 *
 		 * @property no-unexpected-multiline=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-unexpected-multiline': 'error',
 
@@ -1322,7 +1322,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-unmodified-loop-condition}
 		 *
 		 * @property no-unmodified-loop-condition=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-unmodified-loop-condition': 'error',
 
@@ -1331,7 +1331,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-unneeded-ternary}
 		 *
 		 * @property no-unneeded-ternary=off - Covered by unicorn/prefer-logical-operator-over-ternary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-unneeded-ternary': 'off',
 
@@ -1340,7 +1340,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-unreachable}
 		 *
 		 * @property no-unreachable=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-unreachable': 'error',
 
@@ -1349,7 +1349,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-unreachable-loop}
 		 *
 		 * @property no-unreachable-loop=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-unreachable-loop': 'error',
 
@@ -1358,7 +1358,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-unsafe-finally}
 		 *
 		 * @property no-unsafe-finally=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-unsafe-finally': 'error',
 
@@ -1367,7 +1367,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-unsafe-negation}
 		 *
 		 * @property no-unsafe-negation=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-unsafe-negation': 'error',
 
@@ -1376,7 +1376,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-unsafe-optional-chaining}
 		 *
 		 * @property no-unsafe-optional-chaining=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-unsafe-optional-chaining': 'error',
 
@@ -1385,7 +1385,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-unused-expressions}
 		 *
 		 * @property no-unused-expressions=off - Covered by babel/no-unused-expressions.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-unused-expressions': 'off',
 
@@ -1394,7 +1394,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-unused-labels}
 		 *
 		 * @property no-unused-labels=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-unused-labels': 'error',
 
@@ -1403,7 +1403,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-unused-private-class-members}
 		 *
 		 * @property no-unused-private-class-members=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-unused-private-class-members': 'error',
 
@@ -1412,7 +1412,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-unused-vars}
 		 *
 		 * @property no-unused-vars=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-unused-vars': 'error',
 
@@ -1421,7 +1421,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-use-before-define}
 		 *
 		 * @property no-use-before-define=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-use-before-define': 'error',
 
@@ -1430,7 +1430,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-useless-backreference}
 		 *
 		 * @property no-useless-backreference=off - Covered by regexp/no-useless-backreference.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-useless-backreference': 'off',
 
@@ -1439,7 +1439,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-useless-call}
 		 *
 		 * @property no-useless-call=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-useless-call': 'error',
 
@@ -1448,7 +1448,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-useless-catch}
 		 *
 		 * @property no-useless-catch=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-useless-catch': 'error',
 
@@ -1457,7 +1457,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-useless-computed-key}
 		 *
 		 * @property no-useless-computed-key=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-useless-computed-key': 'error',
 
@@ -1466,7 +1466,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-useless-concat}
 		 *
 		 * @property no-useless-concat=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-useless-concat': 'error',
 
@@ -1475,7 +1475,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-useless-constructor}
 		 *
 		 * @property no-useless-constructor=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-useless-constructor': 'error',
 
@@ -1484,7 +1484,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-useless-escape}
 		 *
 		 * @property no-useless-escape=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-useless-escape': 'error',
 
@@ -1493,7 +1493,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-useless-rename}
 		 *
 		 * @property no-useless-rename=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-useless-rename': 'error',
 
@@ -1502,7 +1502,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-useless-return}
 		 *
 		 * @property no-useless-return=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-useless-return': 'error',
 
@@ -1511,7 +1511,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-var}
 		 *
 		 * @property no-var=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-var': 'error',
 
@@ -1520,7 +1520,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-void}
 		 *
 		 * @property no-void=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-void': 'error',
 
@@ -1529,7 +1529,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-warning-comments}
 		 *
 		 * @property no-warning-comments=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-warning-comments': 'off',
 
@@ -1538,7 +1538,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/no-with}
 		 *
 		 * @property no-with=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'no-with': 'error',
 
@@ -1547,7 +1547,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/object-shorthand}
 		 *
 		 * @property object-shorthand=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'object-shorthand': 'error',
 
@@ -1556,7 +1556,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/one-var}
 		 *
 		 * @property one-var=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'one-var': ['error', 'never'],
 
@@ -1565,7 +1565,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/operator-assignment}
 		 *
 		 * @property operator-assignment=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'operator-assignment': 'error',
 
@@ -1574,7 +1574,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/prefer-arrow-callback}
 		 *
 		 * @property prefer-arrow-callback=off - Covered by prefer-arrow-functions/prefer-arrow-functions.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'prefer-arrow-callback': 'off',
 
@@ -1583,7 +1583,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/prefer-const}
 		 *
 		 * @property prefer-const=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'prefer-const': 'error',
 
@@ -1592,7 +1592,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/prefer-destructuring}
 		 *
 		 * @property prefer-destructuring=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'prefer-destructuring': 'off',
 
@@ -1601,7 +1601,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/prefer-exponentiation-operator}
 		 *
 		 * @property prefer-exponentiation-operator=off - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'prefer-exponentiation-operator': 'off',
 
@@ -1610,7 +1610,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/prefer-named-capture-group}
 		 *
 		 * @property prefer-named-capture-group=off - Covered by regexp/prefer-named-capture-group.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'prefer-named-capture-group': 'off',
 
@@ -1619,7 +1619,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/prefer-numeric-literals}
 		 *
 		 * @property prefer-numeric-literals=off - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'prefer-numeric-literals': 'off',
 
@@ -1628,7 +1628,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/prefer-object-has-own}
 		 *
 		 * @property prefer-object-has-own=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'prefer-object-has-own': 'error',
 
@@ -1637,7 +1637,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/prefer-object-spread}
 		 *
 		 * @property prefer-object-spread=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'prefer-object-spread': 'off',
 
@@ -1646,7 +1646,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/prefer-promise-reject-errors}
 		 *
 		 * @property prefer-promise-reject-errors=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'prefer-promise-reject-errors': 'error',
 
@@ -1655,7 +1655,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/prefer-regex-literals}
 		 *
 		 * @property prefer-regex-literals=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'prefer-regex-literals': 'error',
 
@@ -1664,7 +1664,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/prefer-rest-params}
 		 *
 		 * @property prefer-rest-params=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'prefer-rest-params': 'error',
 
@@ -1673,7 +1673,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/prefer-spread}
 		 *
 		 * @property prefer-spread=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'prefer-spread': 'error',
 
@@ -1682,7 +1682,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/prefer-template}
 		 *
 		 * @property prefer-template=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'prefer-template': 'error',
 
@@ -1691,7 +1691,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/radix}
 		 *
 		 * @property radix=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		radix: 'error',
 
@@ -1700,7 +1700,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/require-atomic-updates}
 		 *
 		 * @property require-atomic-updates=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'require-atomic-updates': 'error',
 
@@ -1709,7 +1709,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/require-await}
 		 *
 		 * @property require-await=off - Doesn't consider functions that return a Promise.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'require-await': 'off',
 
@@ -1718,7 +1718,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/require-unicode-regexp}
 		 *
 		 * @property require-unicode-regexp=off - Covered by regexp/no-misleading-unicode-character.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'require-unicode-regexp': 'off',
 
@@ -1727,7 +1727,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/require-yield}
 		 *
 		 * @property require-yield=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'require-yield': 'error',
 
@@ -1736,7 +1736,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/sort-imports}
 		 *
 		 * @property sort-imports=error - Too simple. Doesn't account for grouping adequately.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'sort-imports': 'off',
 
@@ -1745,7 +1745,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/sort-keys}
 		 *
 		 * @property sort-keys=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'sort-keys': 'off',
 
@@ -1754,7 +1754,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/sort-vars}
 		 *
 		 * @property sort-vars=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'sort-vars': 'off',
 
@@ -1763,7 +1763,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/strict}
 		 *
 		 * @property strict=error - Code quality.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		strict: 'error',
 
@@ -1772,7 +1772,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/symbol-description}
 		 *
 		 * @property symbol-description=off - Arbitrary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'symbol-description': 'off',
 
@@ -1781,7 +1781,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/unicode-bom}
 		 *
 		 * @property unicode-bom=off
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'unicode-bom': 'off',
 
@@ -1790,7 +1790,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/use-isnan}
 		 *
 		 * @property use-isnan=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'use-isnan': 'error',
 
@@ -1799,7 +1799,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/valid-typeof}
 		 *
 		 * @property valid-typeof=off - Covered by babel/valid-typeof.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'valid-typeof': 'off',
 
@@ -1808,7 +1808,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/vars-on-top}
 		 *
 		 * @property vars-on-top=off - Unnecessary.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		'vars-on-top': 'off',
 
@@ -1817,7 +1817,7 @@ export default {
 		 * @see {@link https://eslint.org/docs/rules/yoda}
 		 *
 		 * @property yoda=error - Readability and simplicity.
-		 * @memberof core
+		 * @memberOf core
 		 **/
 		yoda: [
 			'error',

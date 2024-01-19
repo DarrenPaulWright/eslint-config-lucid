@@ -11,7 +11,7 @@
 
 | Name | Description |
 | --- | --- |
-| files | .js, .jsx,, .mjs, .cjs .ts, .tsx |
+| files | .js, .jsx, .mjs, .cjs .ts, .tsx |
 
 | Rule | Value | Description |
 | --- | --- | --- |

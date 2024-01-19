@@ -8,7 +8,9 @@ export default [
 		],
 		rules: {
 			'node/no-process-exit': 'off',
-			'node/no-unpublished-import': 'off'
+			'node/no-unpublished-import': 'off',
+			'jsdoc/require-property-type': 'off',
+			'jsdoc/valid-types': 'off'
 		}
 	}
 ];

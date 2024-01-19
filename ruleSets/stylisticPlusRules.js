@@ -4,7 +4,7 @@ import stylisticPlusPlugin from '@stylistic/eslint-plugin-plus';
  * ESLint rules for [@stylistic/eslint-plugin-plus](https://www.npmjs.com/package/@stylistic/eslint-plugin-plus).
  *
  * @namespace @stylistic/plus
- * @property files .js, .jsx, .mjs, .cjs .ts, .tsx
+ * @property files - .js, .jsx, .mjs, .cjs .ts, .tsx
  **/
 export default {
 	files: [
@@ -24,7 +24,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/plus/indent-binary-ops}
 		 *
 		 * @property @stylistic/plus/indent-binary-ops=error - Readability.
-		 * @memberof @stylistic/plus
+		 * @memberOf @stylistic/plus
 		 **/
 		'@stylistic/plus/indent-binary-ops': ['error', 'tab'],
 

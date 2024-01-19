@@ -1,5 +1,6 @@
 import babelRules from './ruleSets/babelRules.js';
 import coreRules from './ruleSets/coreRules.js';
+import jsdocRules from './ruleSets/jsdocRules.js';
 import lodashRules from './ruleSets/lodashRules.js';
 import nodeRules, {
 	nodeScriptRules,
@@ -90,6 +91,7 @@ const lucid = [
 	babelRules,
 	preferArrowFunctionsRules,
 	lodashRules,
+	jsdocRules,
 	{
 		files: [
 			'**/*.test.js',

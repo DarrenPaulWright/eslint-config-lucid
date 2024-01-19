@@ -4,7 +4,7 @@ import stylisticJsPlugin from '@stylistic/eslint-plugin-js';
  * ESLint rules for [@stylistic/eslint-plugin-js](https://www.npmjs.com/package/@stylistic/eslint-plugin-js).
  *
  * @namespace @stylistic/js
- * @property files .js, .jsx, .mjs, .cjs .ts, .tsx
+ * @property files - .js, .jsx, .mjs, .cjs .ts, .tsx
  **/
 export default {
 	files: [
@@ -24,7 +24,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/array-bracket-newline}
 		 *
 		 * @property @stylistic/js/array-bracket-newline=off - Incomplete implementation. Doesn't account for objects in multiline situations.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/array-bracket-newline': 'off',
 
@@ -33,7 +33,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/array-bracket-spacing}
 		 *
 		 * @property @stylistic/js/array-bracket-spacing=error - Provides visual distinction from objects.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/array-bracket-spacing': [
 			'error',
@@ -45,7 +45,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/array-element-newline}
 		 *
 		 * @property @stylistic/js/array-element-newline=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/array-element-newline': ['error', 'consistent'],
 
@@ -54,7 +54,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/arrow-parens}
 		 *
 		 * @property @stylistic/js/arrow-parens=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/arrow-parens': ['error', 'always'],
 
@@ -63,7 +63,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/arrow-spacing}
 		 *
 		 * @property @stylistic/js/arrow-spacing=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/arrow-spacing': 'error',
 
@@ -72,7 +72,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/block-spacing}
 		 *
 		 * @property @stylistic/js/block-spacing=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/block-spacing': 'error',
 
@@ -81,7 +81,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/brace-style}
 		 *
 		 * @property @stylistic/js/brace-style=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/brace-style': ['error', 'stroustrup'],
 
@@ -90,7 +90,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/comma-dangle}
 		 *
 		 * @property @stylistic/js/comma-dangle=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/comma-dangle': ['error', 'never'],
 
@@ -99,7 +99,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/comma-spacing}
 		 *
 		 * @property @stylistic/js/comma-spacing=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/comma-spacing': 'error',
 
@@ -108,7 +108,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/comma-style}
 		 *
 		 * @property @stylistic/js/comma-style=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/comma-style': ['error', 'last'],
 
@@ -117,7 +117,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/computed-property-spacing}
 		 *
 		 * @property @stylistic/js/computed-property-spacing=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/computed-property-spacing': 'error',
 
@@ -126,7 +126,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/dot-location}
 		 *
 		 * @property @stylistic/js/dot-location=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/dot-location': ['error', 'property'],
 
@@ -135,7 +135,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/eol-last}
 		 *
 		 * @property @stylistic/js/eol-last=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/eol-last': 'error',
 
@@ -144,7 +144,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/function-call-argument-newline}
 		 *
 		 * @property @stylistic/js/function-call-argument-newline=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/function-call-argument-newline': ['error', 'consistent'],
 
@@ -156,7 +156,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/function-call-spacing}
 		 *
 		 * @property @stylistic/js/function-call-spacing=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/function-call-spacing': 'error',
 
@@ -165,7 +165,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/function-paren-newline}
 		 *
 		 * @property @stylistic/js/function-paren-newline=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/function-paren-newline': ['error', 'consistent'],
 
@@ -174,7 +174,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/generator-star-spacing}
 		 *
 		 * @property @stylistic/js/generator-star-spacing=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/generator-star-spacing': 'error',
 
@@ -183,7 +183,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/implicit-arrow-linebreak}
 		 *
 		 * @property @stylistic/js/implicit-arrow-linebreak=off - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/implicit-arrow-linebreak': ['error', 'beside'],
 
@@ -192,7 +192,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/indent}
 		 *
 		 * @property @stylistic/js/indent=error - Tabs produce smaller file sizes and allow different developers to view the tabs as they wish.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/indent': [
 			'error',
@@ -211,7 +211,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/jsx-quotes}
 		 *
 		 * @property @stylistic/js/jsx-quotes=off - Beyond the scope of this config.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/jsx-quotes': 'off',
 
@@ -220,7 +220,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/key-spacing}
 		 *
 		 * @property @stylistic/js/key-spacing=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/key-spacing': 'error',
 
@@ -229,7 +229,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/keyword-spacing}
 		 *
 		 * @property @stylistic/js/keyword-spacing=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/keyword-spacing': 'error',
 
@@ -238,7 +238,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/linebreak-style}
 		 *
 		 * @property @stylistic/js/linebreak-style=error - Code quality.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/linebreak-style': 'error',
 
@@ -247,7 +247,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/lines-around-comment}
 		 *
 		 * @property @stylistic/js/lines-around-comment=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/lines-around-comment': [
 			'error',
@@ -265,7 +265,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/lines-between-class-members}
 		 *
 		 * @property @stylistic/js/lines-between-class-members=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/lines-between-class-members': [
 			'error',
@@ -280,7 +280,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/max-len}
 		 *
 		 * @property @stylistic/js/max-len=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/max-len': [
 			'error',
@@ -301,7 +301,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/max-statements-per-line}
 		 *
 		 * @property @stylistic/js/max-statements-per-line=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/max-statements-per-line': 'error',
 
@@ -310,7 +310,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/multiline-ternary}
 		 *
 		 * @property @stylistic/js/multiline-ternary=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/multiline-ternary': ['error', 'always-multiline'],
 
@@ -319,7 +319,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/new-parens}
 		 *
 		 * @property @stylistic/js/new-parens=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/new-parens': 'error',
 
@@ -328,7 +328,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/newline-per-chained-call}
 		 *
 		 * @property @stylistic/js/newline-per-chained-call=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/newline-per-chained-call': [
 			'error',
@@ -340,7 +340,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/no-confusing-arrow}
 		 *
 		 * @property @stylistic/js/no-confusing-arrow=off - Arbitrary.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/no-confusing-arrow': 'off',
 
@@ -349,7 +349,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/no-extra-parens}
 		 *
 		 * @property @stylistic/js/no-extra-parens=off - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/no-extra-parens': 'off',
 
@@ -358,7 +358,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/no-extra-semi}
 		 *
 		 * @property @stylistic/js/no-extra-semi=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/no-extra-semi': 'error',
 
@@ -367,7 +367,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/no-floating-decimal}
 		 *
 		 * @property @stylistic/js/no-floating-decimal=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/no-floating-decimal': 'error',
 
@@ -376,7 +376,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/no-mixed-operators}
 		 *
 		 * @property @stylistic/js/no-mixed-operators=error - Readability and simplicity and code quality.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/no-mixed-operators': 'error',
 
@@ -385,7 +385,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/no-mixed-spaces-and-tabs}
 		 *
 		 * @property @stylistic/js/no-mixed-spaces-and-tabs=error - Clean formatting.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/no-mixed-spaces-and-tabs': 'error',
 
@@ -394,7 +394,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/no-multi-spaces}
 		 *
 		 * @property @stylistic/js/no-multi-spaces=error - Clean formatting.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/no-multi-spaces': 'error',
 
@@ -403,7 +403,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/no-multiple-empty-lines}
 		 *
 		 * @property @stylistic/js/no-multiple-empty-lines=error - Clean formatting.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/no-multiple-empty-lines': 'error',
 
@@ -412,7 +412,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/no-tabs}
 		 *
 		 * @property @stylistic/js/no-tabs=off - Arbitrary.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/no-tabs': 'off',
 
@@ -421,7 +421,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/no-trailing-spaces}
 		 *
 		 * @property @stylistic/js/no-trailing-spaces=error - Clean formatting.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/no-trailing-spaces': 'error',
 
@@ -430,7 +430,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/no-whitespace-before-property}
 		 *
 		 * @property @stylistic/js/no-whitespace-before-property=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/no-whitespace-before-property': 'error',
 
@@ -439,7 +439,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/nonblock-statement-body-position}
 		 *
 		 * @property @stylistic/js/nonblock-statement-body-position=off - Covered by curly.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/nonblock-statement-body-position': 'off',
 
@@ -448,7 +448,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/object-curly-newline}
 		 *
 		 * @property @stylistic/js/object-curly-newline=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/object-curly-newline': [
 			'error',
@@ -463,7 +463,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/object-curly-spacing}
 		 *
 		 * @property @stylistic/js/object-curly-spacing=error - Provides whitespace to make object contents more readable. Gestalt Psychology.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/object-curly-spacing': ['error', 'always'],
 
@@ -472,7 +472,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/object-property-newline}
 		 *
 		 * @property @stylistic/js/object-property-newline=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/object-property-newline': [
 			'error',
@@ -486,7 +486,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/one-var-declaration-per-line}
 		 *
 		 * @property @stylistic/js/one-var-declaration-per-line=off - Covered by one-var.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/one-var-declaration-per-line': 'off',
 
@@ -495,7 +495,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/operator-linebreak}
 		 *
 		 * @property @stylistic/js/operator-linebreak=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/operator-linebreak': ['error', 'after'],
 
@@ -504,7 +504,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/padded-blocks}
 		 *
 		 * @property @stylistic/js/padded-blocks=error - Clean formatting.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/padded-blocks': ['error', 'never'],
 
@@ -513,7 +513,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/padding-line-between-statements}
 		 *
 		 * @property @stylistic/js/padding-line-between-statements=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/padding-line-between-statements': [
 			'error',
@@ -534,7 +534,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/quote-props}
 		 *
 		 * @property @stylistic/js/quote-props=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/quote-props': ['error', 'as-needed'],
 
@@ -543,7 +543,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/quotes}
 		 *
 		 * @property @stylistic/js/quotes=error - Maintains consistency. Single quotes are visually lighter weight and allow the text within them to be more visible therefor reducing cognitive load.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/quotes': ['error', 'single'],
 
@@ -552,7 +552,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/rest-spread-spacing}
 		 *
 		 * @property @stylistic/js/rest-spread-spacing=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/rest-spread-spacing': 'error',
 
@@ -561,7 +561,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/semi}
 		 *
 		 * @property @stylistic/js/semi=off - Covered by babel/semi.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/semi': 'off',
 
@@ -570,7 +570,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/semi-spacing}
 		 *
 		 * @property @stylistic/js/semi-spacing=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/semi-spacing': 'error',
 
@@ -579,7 +579,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/semi-style}
 		 *
 		 * @property @stylistic/js/semi-style=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/semi-style': ['error', 'last'],
 
@@ -588,7 +588,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/space-before-blocks}
 		 *
 		 * @property @stylistic/js/space-before-blocks=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/space-before-blocks': 'error',
 
@@ -597,7 +597,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/space-before-function-paren}
 		 *
 		 * @property @stylistic/js/space-before-function-paren=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/space-before-function-paren': ['error', {
 			anonymous: 'never',
@@ -610,7 +610,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/space-in-parens}
 		 *
 		 * @property @stylistic/js/space-in-parens=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/space-in-parens': ['error', 'never'],
 
@@ -619,7 +619,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/space-infix-ops}
 		 *
 		 * @property @stylistic/js/space-infix-ops=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/space-infix-ops': 'error',
 
@@ -628,7 +628,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/space-unary-ops}
 		 *
 		 * @property @stylistic/js/space-unary-ops=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/space-unary-ops': 'error',
 
@@ -637,7 +637,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/spaced-comment}
 		 *
 		 * @property @stylistic/js/spaced-comment=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/spaced-comment': ['error', 'always'],
 
@@ -646,7 +646,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/switch-colon-spacing}
 		 *
 		 * @property @stylistic/js/switch-colon-spacing=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/switch-colon-spacing': 'error',
 
@@ -655,7 +655,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/template-curly-spacing}
 		 *
 		 * @property @stylistic/js/template-curly-spacing=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/template-curly-spacing': ['error', 'always'],
 
@@ -664,7 +664,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/template-tag-spacing}
 		 *
 		 * @property @stylistic/js/template-tag-spacing=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/template-tag-spacing': 'error',
 
@@ -673,7 +673,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/wrap-iife}
 		 *
 		 * @property @stylistic/js/wrap-iife=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/wrap-iife': ['error', 'inside'],
 
@@ -682,7 +682,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/wrap-regex}
 		 *
 		 * @property @stylistic/js/wrap-regex=off - Arbitrary.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/wrap-regex': 'off',
 
@@ -691,7 +691,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/js/yield-star-spacing}
 		 *
 		 * @property @stylistic/js/yield-star-spacing=error - Readability and simplicity.
-		 * @memberof @stylistic/js
+		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/yield-star-spacing': 'error'
 	}

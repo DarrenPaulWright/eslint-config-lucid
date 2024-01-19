@@ -4,7 +4,7 @@ import preferArrowFunctionsPlugin from 'eslint-plugin-prefer-arrow-functions';
  * ESLint rules for [eslint-plugin-prefer-arrow-functions](https://www.npmjs.com/package/eslint-plugin-prefer-arrow-functions).
  *
  * @namespace prefer-arrow-functions
- * @property files .js, .jsx, .mjs, .cjs, .ts, .tsx
+ * @property files - .js, .jsx, .mjs, .cjs, .ts, .tsx
  **/
 export default {
 	files: [
@@ -21,7 +21,7 @@ export default {
 	rules: {
 		/**
 		 * @property prefer-arrow-functions/prefer-arrow-functions=error - Readability and simplicity.
-		 * @memberof prefer-arrow-functions
+		 * @memberOf prefer-arrow-functions
 		 **/
 		'prefer-arrow-functions/prefer-arrow-functions': [
 			'error',

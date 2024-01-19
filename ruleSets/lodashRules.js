@@ -4,7 +4,7 @@ import lodashPlugin from 'eslint-plugin-you-dont-need-lodash-underscore';
  * ESLint rules for [eslint-plugin-you-dont-need-lodash-underscore](https://www.npmjs.com/package/eslint-plugin-you-dont-need-lodash-underscore).
  *
  * @namespace you-dont-need-lodash-underscore
- * @property files .js, .jsx, .mjs, .cjs, .ts, .tsx
+ * @property files - .js, .jsx, .mjs, .cjs, .ts, .tsx
  **/
 const lodashRules = {
 	files: [
@@ -43,7 +43,7 @@ const lodashRules = {
 		 * @see {@link https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore?tab=readme-ov-file#quick-links}
 		 *
 		 * @property you-dont-need-lodash-underscore/all=error - Code quality and simplicity.
-		 * @memberof you-dont-need-lodash-underscore
+		 * @memberOf you-dont-need-lodash-underscore
 		 **/
 		'you-dont-need-lodash-underscore/all': 'error',
 

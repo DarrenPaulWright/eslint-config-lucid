@@ -4,7 +4,7 @@ import promisePlugin from 'eslint-plugin-promise';
  * ESLint rules for [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise).
  *
  * @namespace promise
- * @property files .js, .jsx, .mjs, .cjs, .ts, .tsx
+ * @property files - .js, .jsx, .mjs, .cjs, .ts, .tsx
  **/
 export default {
 	files: [
@@ -21,73 +21,73 @@ export default {
 	rules: {
 		/**
 		 * @property promise/always-return=off - Arbitrary.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/always-return': 'off',
 
 		/**
 		 * @property promise/avoid-new=off - Arbitrary.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/avoid-new': 'off',
 
 		/**
 		 * @property promise/catch-or-return=error - Code quality.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/catch-or-return': 'error',
 
 		/**
 		 * @property promise/no-callback-in-promise=warn - Code quality.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/no-callback-in-promise': 'warn',
 
 		/**
 		 * @property promise/no-multiple-resolved=error - Code quality.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/no-multiple-resolved': 'error',
 
 		/**
 		 * @property promise/no-native=off - Arbitrary.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/no-native': 'off',
 
 		/**
 		 * @property promise/no-nesting=error - Readability and simplicity.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/no-nesting': 'error',
 
 		/**
 		 * @property promise/no-new-statics=error - Code quality.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/no-new-statics': 'error',
 
 		/**
 		 * @property promise/no-promise-in-callback=warn - Code quality.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/no-promise-in-callback': 'warn',
 
 		/**
 		 * @property promise/no-return-in-finally=error - Code quality.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/no-return-in-finally': 'error',
 
 		/**
 		 * @property promise/no-return-wrap=error - Readability and simplicity.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/no-return-wrap': 'error',
 
 		/**
 		 * @property promise/param-names=error - Readability and simplicity.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/param-names': [
 			'error',
@@ -99,19 +99,19 @@ export default {
 
 		/**
 		 * @property promise/prefer-await-to-callbacks=off - Arbitrary.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/prefer-await-to-callbacks': 'off',
 
 		/**
 		 * @property promise/prefer-await-to-then=off - Arbitrary.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/prefer-await-to-then': 'off',
 
 		/**
 		 * @property promise/valid-params=error - Code quality.
-		 * @memberof promise
+		 * @memberOf promise
 		 **/
 		'promise/valid-params': 'error'
 	}

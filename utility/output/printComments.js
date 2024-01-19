@@ -31,7 +31,7 @@ export default async (rules, descriptions, pluginName) => {
 		}
 
 		console.log(` * @property ${ name }=${ getMappedValue(rules[name]) } - REASON.`);
-		console.log(` * @memberof ${ pluginName }`);
+		console.log(` * @memberOf ${ pluginName }`);
 		console.log(' **/');
 		console.log(` '${ name }': ${ pretty(rules[name]) },`);
 
