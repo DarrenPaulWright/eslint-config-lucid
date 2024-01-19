@@ -58,10 +58,10 @@
 		"@stylistic/eslint-plugin-plus": "^1.5.3",
 		"eslint-plugin-babel": "^5.3.1",
 		"eslint-plugin-jsdoc": "^48.0.2",
-		"eslint-plugin-n": "^16.6.1",
+		"eslint-plugin-n": "^16.6.2",
 		"eslint-plugin-prefer-arrow-functions": "^3.2.4",
 		"eslint-plugin-promise": "^6.1.1",
-		"eslint-plugin-regexp": "^2.1.2",
+		"eslint-plugin-regexp": "^2.2.0",
 		"eslint-plugin-security": "^2.1.0",
 		"eslint-plugin-unicorn": "^50.0.1",
 		"eslint-plugin-you-dont-need-lodash-underscore": "^6.13.0"
@@ -69,7 +69,7 @@
 	"devDependencies": {
 		"@eslint/eslintrc": "^3.0.0",
 		"chalk": "^5.3.0",
-		"change-case": "^5.3.0",
+		"change-case": "^5.4.1",
 		"display-value": "^2.2.0",
 		"dmd-readable": "^1.2.4",
 		"eslint": "^8.56.0",
