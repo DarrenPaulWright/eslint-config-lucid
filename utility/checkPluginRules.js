@@ -11,6 +11,7 @@ import onEnterContinue from './output/onEnterContinue.js';
 import printComments from './output/printComments.js';
 import processExternalRules from './process/processExternalRules.js';
 import ruleLabel from './process/ruleLabel.js';
+import lucid, { lucidNode } from '../index.js';
 
 const argv = process.argv;
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
@@ -23,7 +24,7 @@ const initialPath = argv[1].includes('node_modules') ?
 	join(__dirname, '..');
 
 const eslintRules = await import(`file://${ join(initialPath, 'node_modules/eslint/lib/rules/index.js') }`);
-const lucid = await import(`file://${ join(initialPath, 'index.js') }`);
+const main = await import(`file://${ join(initialPath, 'index.js') }`);
 
 // eslint-disable-next-line no-unused-vars
 const [coreRules, _, coreDeprecated] = processExternalRules(eslintRules, '');
@@ -102,13 +103,19 @@ const processConfig = (config, index, configName) => {
 	}
 };
 
-lucid.default.forEach((config, index) => {
-	processConfig(config, index, 'lucid');
+lucid.forEach((config, index) => {
+	processConfig(config, index, 'main');
 });
 
-lucid.lucidNode?.forEach((config, index) => {
+lucidNode.forEach((config, index) => {
 	processConfig(config, index, 'lucidNode');
 });
+
+if (!main.lucidNode) {
+	main.default.forEach((config, index) => {
+		processConfig(config, index, 'main');
+	});
+}
 
 if (isComments) {
 	const entries = Object.entries(commentsData);
