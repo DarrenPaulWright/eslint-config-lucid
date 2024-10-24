@@ -38,10 +38,10 @@ export default {
 		'promise/catch-or-return': 'error',
 
 		/**
-		 * @property promise/no-callback-in-promise=warn - Code quality.
+		 * @property promise/no-callback-in-promise=warn - Arbitrary.
 		 * @memberOf promise
 		 **/
-		'promise/no-callback-in-promise': 'warn',
+		'promise/no-callback-in-promise': 'off',
 
 		/**
 		 * @property promise/no-multiple-resolved=error - Code quality.
