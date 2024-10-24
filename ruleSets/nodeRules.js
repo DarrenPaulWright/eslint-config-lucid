@@ -19,6 +19,7 @@ const nodeRules = {
 	languageOptions: {
 		globals: {
 			...nodePlugin.configs['recommended-module'].globals,
+			global: true,
 			process: true,
 			console: true,
 			URL: true
