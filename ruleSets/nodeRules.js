@@ -126,10 +126,10 @@ const nodeRules = {
 		'node/no-path-concat': 'error',
 
 		/**
-		 * @property node/no-process-env=error - Code quality.
+		 * @property node/no-process-env=off - Arbitrary.
 		 * @memberOf node
 		 **/
-		'node/no-process-env': 'error',
+		'node/no-process-env': 'off',
 
 		/**
 		 * @property node/no-process-exit=error - Code quality. If your building a CLI app then this can be turned off.
