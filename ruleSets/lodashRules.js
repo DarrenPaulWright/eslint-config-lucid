@@ -19,6 +19,7 @@ const lodashRules = {
 		'you-dont-need-lodash-underscore': lodashPlugin
 	},
 	rules: {
+		'you-dont-need-lodash-underscore/clone-deep': 'off',
 		'you-dont-need-lodash-underscore/concat': 'off',
 		'you-dont-need-lodash-underscore/drop': 'off',
 		'you-dont-need-lodash-underscore/drop-right': 'off',

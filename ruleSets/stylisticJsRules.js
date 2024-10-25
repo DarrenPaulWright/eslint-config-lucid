@@ -234,6 +234,15 @@ export default {
 		'@stylistic/js/keyword-spacing': 'error',
 
 		/**
+		 * Line comments can be positioned above or beside code. This rule helps teams maintain a consistent style.
+		 * @see {@link https://eslint.style/rules/js/line-comment-position}
+		 *
+		 * @property @stylistic/js/line-comment-position=off - Arbitrary.
+		 * @memberOf @stylistic/js
+		 **/
+		'@stylistic/js/line-comment-position': 'off',
+
+		/**
 		 * Enforce consistent linebreak style
 		 * @see {@link https://eslint.style/rules/js/linebreak-style}
 		 *
@@ -304,6 +313,15 @@ export default {
 		 * @memberOf @stylistic/js
 		 **/
 		'@stylistic/js/max-statements-per-line': 'error',
+
+		/**
+		 * Many style guides require a particular style for comments that span multiple lines. For example, some style guides prefer the use of a single block comment for multiline comments, whereas other style guides prefer consecutive line comments.
+		 * @see {@link https://eslint.style/rules/js/multiline-comment-style}
+		 *
+		 * @property @stylistic/js/multiline-comment-style=off - Arbitrary.
+		 * @memberOf @stylistic/js
+		 **/
+		'@stylistic/js/multiline-comment-style': 'off',
 
 		/**
 		 * Enforce newlines between operands of ternary expressions

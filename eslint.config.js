@@ -7,6 +7,7 @@ export default [
 			'**/*.js'
 		],
 		rules: {
+			'no-console': 'off',
 			'node/no-process-exit': 'off',
 			'node/no-unpublished-import': 'off',
 			'jsdoc/require-property-type': 'off',

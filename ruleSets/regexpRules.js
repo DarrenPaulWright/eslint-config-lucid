@@ -503,6 +503,12 @@ export default {
 		 * @property regexp/use-ignore-case=error - Readability and simplicity.
 		 * @memberOf regexp
 		 **/
-		'regexp/use-ignore-case': 'error'
+		'regexp/use-ignore-case': 'error',
+
+		/**
+		 * @property regexp/unicode-property=error - Readability and simplicity.
+		 * @memberOf regexp
+		 **/
+		'regexp/unicode-property': 'error'
 	}
 };

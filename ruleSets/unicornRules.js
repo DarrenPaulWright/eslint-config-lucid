@@ -38,6 +38,18 @@ export default {
 		'unicorn/consistent-destructuring': 'warn',
 
 		/**
+		 * @property unicorn/consistent-empty-array-spread=error - Code quality.
+		 * @memberOf unicorn
+		 **/
+		'unicorn/consistent-empty-array-spread': 'error',
+
+		/**
+		 * @property unicorn/consistent-existence-index-check=error - Readability and simplicity, performance.
+		 * @memberOf unicorn
+		 **/
+		'unicorn/consistent-existence-index-check': 'error',
+
+		/**
 		 * @property unicorn/consistent-function-scoping=off - Arbitrary.
 		 * @memberOf unicorn
 		 **/
@@ -120,6 +132,12 @@ export default {
 		'unicorn/no-abusive-eslint-disable': 'error',
 
 		/**
+		 * @property unicorn/no-anonymous-default-export=off - Arbitrary.
+		 * @memberOf unicorn
+		 **/
+		'unicorn/no-anonymous-default-export': 'off',
+
+		/**
 		 * @property unicorn/no-array-callback-reference=off - Arbitrary.
 		 * @memberOf unicorn
 		 **/
@@ -154,6 +172,12 @@ export default {
 		 * @memberOf unicorn
 		 **/
 		'unicorn/no-await-expression-member': 'error',
+
+		/**
+		 * @property unicorn/no-await-in-promise-methods=error - Code quality.
+		 * @memberOf unicorn
+		 **/
+		'unicorn/no-await-in-promise-methods': 'error',
 
 		/**
 		 * @property unicorn/no-console-spaces=warn - Readability and simplicity.
@@ -192,6 +216,12 @@ export default {
 		'unicorn/no-instanceof-array': 'error',
 
 		/**
+		 * @property unicorn/no-invalid-fetch-options=error - Code quality.
+		 * @memberOf unicorn
+		 **/
+		'unicorn/no-invalid-fetch-options': 'error',
+
+		/**
 		 * @property unicorn/no-invalid-remove-event-listener=error - Code quality.
 		 * @memberOf unicorn
 		 **/
@@ -204,16 +234,34 @@ export default {
 		'unicorn/no-keyword-prefix': 'off',
 
 		/**
+		 * @property unicorn/no-length-as-slice-end=off - Readability and simplicity.
+		 * @memberOf unicorn
+		 **/
+		'unicorn/no-length-as-slice-end': 'off',
+
+		/**
 		 * @property unicorn/no-lonely-if=error - Readability and simplicity.
 		 * @memberOf unicorn
 		 **/
 		'unicorn/no-lonely-if': 'error',
 
 		/**
+		 * @property unicorn/no-magic-array-flat-depth=error - Readability and simplicity.
+		 * @memberOf unicorn
+		 **/
+		'unicorn/no-magic-array-flat-depth': 'error',
+
+		/**
 		 * @property unicorn/no-negated-condition=error - Readability and simplicity.
 		 * @memberOf unicorn
 		 **/
 		'unicorn/no-negated-condition': 'error',
+
+		/**
+		 * @property unicorn/no-negation-in-equality-check=error - Readability and simplicity.
+		 * @memberOf unicorn
+		 **/
+		'unicorn/no-negation-in-equality-check': 'error',
 
 		/**
 		 * @property unicorn/no-nested-ternary=error - Code quality and readability and simplicity.
@@ -250,6 +298,12 @@ export default {
 		 * @memberOf unicorn
 		 **/
 		'unicorn/no-process-exit': 'off',
+
+		/**
+		 * @property unicorn/no-single-promise-in-promise-methods=error - Readability and simplicity.
+		 * @memberOf unicorn
+		 **/
+		'unicorn/no-single-promise-in-promise-methods': 'error',
 
 		/**
 		 * @property unicorn/no-static-only-class=error - Readability and simplicity.
@@ -462,6 +516,12 @@ export default {
 		'unicorn/prefer-export-from': 'error',
 
 		/**
+		 * @property unicorn/prefer-global-this=off - Arbitrary.
+		 * @memberOf unicorn
+		 **/
+		'unicorn/prefer-global-this': 'off',
+
+		/**
 		 * @property unicorn/prefer-includes=error - Readability and simplicity.
 		 * @memberOf unicorn
 		 **/
@@ -484,6 +544,12 @@ export default {
 		 * @memberOf unicorn
 		 **/
 		'unicorn/prefer-logical-operator-over-ternary': 'error',
+
+		/**
+		 * @property unicorn/prefer-math-min-max=error - Readability and simplicity.
+		 * @memberOf unicorn
+		 **/
+		'unicorn/prefer-math-min-max': 'error',
 
 		/**
 		 * @property unicorn/prefer-math-trunc=error - Readability and simplicity.
@@ -522,10 +588,10 @@ export default {
 		'unicorn/prefer-negative-index': 'error',
 
 		/**
-		 * @property unicorn/prefer-node-protocol=error - Readability and simplicity.
+		 * @property unicorn/prefer-node-protocol=off - Covered by node plugin.
 		 * @memberOf unicorn
 		 **/
-		'unicorn/prefer-node-protocol': 'error',
+		'unicorn/prefer-node-protocol': 'off',
 
 		/**
 		 * @property unicorn/prefer-number-properties=off - Arbitrary.
@@ -588,6 +654,12 @@ export default {
 		'unicorn/prefer-spread': 'off',
 
 		/**
+		 * @property unicorn/prefer-string-raw=off - Readability and simplicity.
+		 * @memberOf unicorn
+		 **/
+		'unicorn/prefer-string-raw': 'off',
+
+		/**
 		 * @property unicorn/prefer-string-replace-all=error - Readability and simplicity.
 		 * @memberOf unicorn
 		 **/
@@ -610,6 +682,12 @@ export default {
 		 * @memberOf unicorn
 		 **/
 		'unicorn/prefer-string-trim-start-end': 'error',
+
+		/**
+		 * @property unicorn/prefer-structured-clone=off - StrucutredClone still has some limitations that other solutions handle, though this could change in the future.
+		 * @memberOf unicorn
+		 **/
+		'unicorn/prefer-structured-clone': 'off',
 
 		/**
 		 * @property unicorn/prefer-switch=error - Readability and simplicity.

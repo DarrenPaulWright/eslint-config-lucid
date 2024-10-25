@@ -33,12 +33,6 @@ const nodeRules = {
 		'node/callback-return': 'off',
 
 		/**
-		 * @property no-console=off - Console is needed in node.
-		 * @memberOf node
-		 **/
-		'no-console': 'off',
-
-		/**
 		 * @property node/exports-style=off - Irrelevant in es module syntax. Set to error for .cjs files.
 		 * @memberOf node
 		 **/
@@ -64,6 +58,12 @@ const nodeRules = {
 		 * @memberOf node
 		 **/
 		'node/handle-callback-err': ['error', 'error'],
+
+		/**
+		 * @property node/hashbang=warn - Code quality.
+		 * @memberOf node
+		 **/
+		'node/hashbang': 'warn',
 
 		/**
 		 * @property node/no-callback-literal=error - Code quality.
@@ -241,6 +241,12 @@ const nodeRules = {
 		'node/prefer-global/url-search-params': ['error', 'always'],
 
 		/**
+		 * @property node/prefer-node-protocol=error - Readability and simplicity.
+		 * @memberOf node
+		 **/
+		'node/prefer-node-protocol': 'error',
+
+		/**
 		 * @property node/prefer-promises/dns=error - Code quality.
 		 * @memberOf node
 		 **/
@@ -256,13 +262,7 @@ const nodeRules = {
 		 * @property node/process-exit-as-throw=error - Fixes consistent-return rule.
 		 * @memberOf node
 		 **/
-		'node/process-exit-as-throw': 'error',
-
-		/**
-		 * @property node/shebang=warn - Code quality.
-		 * @memberOf node
-		 **/
-		'node/shebang': 'warn'
+		'node/process-exit-as-throw': 'error'
 	}
 };
 

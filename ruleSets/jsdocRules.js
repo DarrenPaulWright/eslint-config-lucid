@@ -96,6 +96,12 @@ export default {
 		'jsdoc/check-tag-names': 'error',
 
 		/**
+		 * @property jsdoc/check-template-names=off
+		 * @memberOf jsdoc
+		 **/
+		'jsdoc/check-template-names': 'off',
+
+		/**
 		 * @property jsdoc/check-types=error - Code quality.
 		 * @memberOf jsdoc
 		 **/
@@ -106,6 +112,12 @@ export default {
 		 * @memberOf jsdoc
 		 **/
 		'jsdoc/check-values': 'error',
+
+		/**
+		 * @property jsdoc/convert-to-jsdoc-comments=off
+		 * @memberOf jsdoc
+		 **/
+		'jsdoc/convert-to-jsdoc-comments': 'off',
 
 		/**
 		 * @property jsdoc/empty-tags=error - Code quality.
@@ -130,6 +142,12 @@ export default {
 		 * @memberOf jsdoc
 		 **/
 		'jsdoc/informative-docs': 'error',
+
+		/**
+		 * @property jsdoc/lines-before-block=off
+		 * @memberOf jsdoc
+		 **/
+		'jsdoc/lines-before-block': 'off',
 
 		/**
 		 * @property jsdoc/match-description=error - Readability and simplicity. Must start with an upper case character and end with ., ?, or !.
@@ -344,6 +362,12 @@ export default {
 		 * @memberOf jsdoc
 		 **/
 		'jsdoc/require-returns-type': 'error',
+
+		/**
+		 * @property jsdoc/require-template=error
+		 * @memberOf jsdoc
+		 **/
+		'jsdoc/require-template': 'off',
 
 		/**
 		 * @property jsdoc/require-throws=error - Code quality.

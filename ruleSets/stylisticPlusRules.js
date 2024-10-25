@@ -30,6 +30,12 @@ export default {
 
 		'@stylistic/plus/type-generic-spacing': 'off',
 
-		'@stylistic/plus/type-named-tuple-spacing': 'off'
+		'@stylistic/plus/type-named-tuple-spacing': 'off',
+
+		'@stylistic/plus/curly-newline': ['error', {
+			multiline: true,
+			minElements: 2,
+			consistent: true
+		}]
 	}
 };
