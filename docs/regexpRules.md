@@ -96,3 +96,4 @@
 | regexp/strict | error |   **Reasoning**:Code quality. |
 | regexp/unicode-escape | error |   **Reasoning**:Readability and simplicity. |
 | regexp/use-ignore-case | error |   **Reasoning**:Readability and simplicity. |
+| regexp/unicode-property | error |   **Reasoning**:Readability and simplicity. |

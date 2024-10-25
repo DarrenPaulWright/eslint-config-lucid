@@ -18,7 +18,7 @@
 | promise/always-return | off |   **Reasoning**:Arbitrary. |
 | promise/avoid-new | off |   **Reasoning**:Arbitrary. |
 | promise/catch-or-return | error |   **Reasoning**:Code quality. |
-| promise/no-callback-in-promise | warn |   **Reasoning**:Code quality. |
+| promise/no-callback-in-promise | warn |   **Reasoning**:Arbitrary. |
 | promise/no-multiple-resolved | error |   **Reasoning**:Code quality. |
 | promise/no-native | off |   **Reasoning**:Arbitrary. |
 | promise/no-nesting | error |   **Reasoning**:Readability and simplicity. |
@@ -30,3 +30,4 @@
 | promise/prefer-await-to-callbacks | off |   **Reasoning**:Arbitrary. |
 | promise/prefer-await-to-then | off |   **Reasoning**:Arbitrary. |
 | promise/valid-params | error |   **Reasoning**:Code quality. |
+| promise/spec-only | error |   **Reasoning**:Code quality. |

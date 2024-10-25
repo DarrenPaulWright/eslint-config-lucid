@@ -16,11 +16,11 @@
 | Rule | Value | Description |
 | --- | --- | --- |
 | node/callback-return | off |   **Reasoning**:Arbitrary. |
-| no-console | off |   **Reasoning**:Console is needed in node. |
 | node/exports-style | off |   **Reasoning**:Irrelevant in es module syntax. Set to error for .cjs files. |
 | node/file-extension-in-import | error |   **Reasoning**:Code quality. This is turned off in typescript files. |
 | node/global-require | off |   **Reasoning**:Arbitrary. |
 | node/handle-callback-err | error |   **Reasoning**:Code quality. |
+| node/hashbang | warn |   **Reasoning**:Code quality. |
 | node/no-callback-literal | error |   **Reasoning**:Code quality. |
 | node/no-deprecated-api | error |   **Reasoning**:Code quality. |
 | node/no-exports-assign | error |   **Reasoning**:Code quality. |
@@ -31,7 +31,7 @@
 | node/no-mixed-requires | error |   **Reasoning**:Code quality. |
 | node/no-new-require | error |   **Reasoning**:Readability and simplicity. |
 | node/no-path-concat | error |   **Reasoning**:Code quality. |
-| node/no-process-env | error |   **Reasoning**:Code quality. |
+| node/no-process-env | off |   **Reasoning**:Arbitrary. |
 | node/no-process-exit | error |   **Reasoning**:Code quality. If your building a CLI app then this can be turned off. |
 | node/no-restricted-import | off |   **Reasoning**:Project specific. |
 | node/no-restricted-require | off |   **Reasoning**:Project specific. |
@@ -49,7 +49,7 @@
 | node/prefer-global/text-encoder | error |   **Reasoning**:Readability and simplicity. |
 | node/prefer-global/url | error |   **Reasoning**:Readability and simplicity. |
 | node/prefer-global/url-search-params | error |   **Reasoning**:Readability and simplicity. |
+| node/prefer-node-protocol | error |   **Reasoning**:Readability and simplicity. |
 | node/prefer-promises/dns | error |   **Reasoning**:Code quality. |
 | node/prefer-promises/fs | error |   **Reasoning**:Code quality. |
 | node/process-exit-as-throw | error |   **Reasoning**:Fixes consistent-return rule. |
-| node/shebang | warn |   **Reasoning**:Code quality. |
