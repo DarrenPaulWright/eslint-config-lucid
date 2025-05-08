@@ -96,28 +96,28 @@ const lucid = [
 	jsdocRules,
 	{
 		files: [
-			'**/*.test.js',
-			'**/*.test.ts',
-			'**/*.test.mjs',
-			'**/*.spec.js',
-			'**/*.spec.ts',
-			'**/*.spec.mjs'
+			'**/*.test.{js,jsx,ts,tsx,mjs,cjs}',
+			'**/*.spec.{js,jsx,ts,tsx,mjs,cjs}'
 		],
 		rules: {
 			'consistent-this': 'off',
+			'consistent-return': 'off',
 			'init-declarations': 'off',
+			'max-classes-per-file': 'off',
 			'max-nested-callbacks': 'off',
+			'no-confusing-void-expression': 'off',
 			'no-new': 'off',
 			'unicorn/prevent-abbreviations': 'off'
 		}
 	},
 	{
 		files: [
-			'**/*.bench.js',
-			'**/*.bench.ts',
-			'**/*.bench.mjs'
+			'**/*.bench.{js,jsx,ts,tsx,mjs,cjs}'
 		],
 		rules: {
+			'consistent-return': 'off',
+			'max-classes-per-file': 'off',
+			'no-confusing-void-expression': 'off',
 			'no-unused-vars': 'off'
 		}
 	}
@@ -132,12 +132,7 @@ export const lucidNode = [
 ];
 
 export const lucidBrowser = {
-	files: [
-		'**/*.js',
-		'**/*.mjs',
-		'**/*.ts',
-		'**/*.tsx'
-	],
+	files: ['**/*.{js,mjs,ts,tsx,mjs,cjs}'],
 	languageOptions: {
 		globals: Object.entries(globals.browser)
 				.reduce((result, [key, value]) => {
