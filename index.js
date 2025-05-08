@@ -1,3 +1,4 @@
+import globals from 'globals';
 import babelRules from './ruleSets/babelRules.js';
 import coreRules from './ruleSets/coreRules.js';
 import jsdocRules from './ruleSets/jsdocRules.js';
@@ -31,10 +32,11 @@ import unicornRules from './ruleSets/unicornRules.js';
  *
  * @example
  * ```javascript
- * import lucid from 'eslint-config-lucid';
+ * import lucid, { lucidBrowser } from 'eslint-config-lucid';
  *
  * export default [
  * 	...lucid,
+ * 	lucidBrowser,
  * 	// ... other rule sets.
  * ];
  *
@@ -128,5 +130,22 @@ export const lucidNode = [
 	nodeTypescriptRules,
 	securityRules
 ];
+
+export const lucidBrowser = {
+	files: [
+		'**/*.js',
+		'**/*.mjs',
+		'**/*.ts',
+		'**/*.tsx'
+	],
+	languageOptions: {
+		globals: Object.entries(globals.browser)
+				.reduce((result, [key, value]) => {
+					result[key.trim()] = value;
+
+					return result;
+				}, {})
+	}
+};
 
 export default lucid;

@@ -1,4 +1,5 @@
 import nodePlugin from 'eslint-plugin-n';
+import globals from 'globals';
 
 /**
  * ESLint rules for [eslint-plugin-n](https://www.npmjs.com/package/eslint-plugin-n). Note that .js files are set up for es module syntax just like .cjs.
@@ -17,13 +18,12 @@ const nodeRules = {
 		node: nodePlugin
 	},
 	languageOptions: {
-		globals: {
-			...nodePlugin.configs['recommended-module'].globals,
-			global: true,
-			process: true,
-			console: true,
-			URL: true
-		}
+		globals: Object.entries(globals.node)
+			.reduce((result, [key, value]) => {
+				result[key.trim()] = value;
+
+				return result;
+			}, {})
 	},
 	rules: {
 		/**
