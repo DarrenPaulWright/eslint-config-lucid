@@ -31,6 +31,8 @@ npm i {{package "name"}}
 ```
 {{#each (findBy this 'name' 'Installation')}}
 {{inlineLinks summary}}
+
+{{>examples}}
 {{/each}}
 
 {{#each (findBy this 'name' 'About')}}
