@@ -84,7 +84,7 @@ export default {
 		 * @property complexity=warn - Readability and simplicity.
 		 * @memberOf core
 		 **/
-		complexity: ['warn', 10],
+		complexity: ['warn', 15],
 
 		/**
 		 * Require `return` statements to either always or never specify values
