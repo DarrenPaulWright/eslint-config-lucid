@@ -201,6 +201,8 @@ export default {
 				SwitchCase: 1,
 				MemberExpression: 'off',
 				ignoredNodes: [
+					'JSXElement *',
+					'JSXElement',
 					'CallExpression > MemberExpression *'
 				]
 			}
