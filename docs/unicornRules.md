@@ -17,6 +17,8 @@
 | --- | --- | --- |
 | unicorn/better-regex | off |   **Reasoning**:Covered by regexp plugin. |
 | unicorn/catch-error-name | error |   **Reasoning**:Readability and simplicity. |
+| unicorn/consistent-assert | error |   **Reasoning**:Readability. |
+| unicorn/consistent-date-clone | error |   **Reasoning**:Code quality and readability. |
 | unicorn/consistent-destructuring | warn |   **Reasoning**:Readability and simplicity. |
 | unicorn/consistent-empty-array-spread | error |   **Reasoning**:Code quality. |
 | unicorn/consistent-existence-index-check | error |   **Reasoning**:Readability and simplicity, performance. |
@@ -31,12 +33,14 @@
 | unicorn/import-style | off |   **Reasoning**:Arbitrary. |
 | unicorn/new-for-builtins | error |   **Reasoning**:Code quality. |
 | unicorn/no-abusive-eslint-disable | error |   **Reasoning**:Code quality. |
+| unicorn/no-accessor-recursion | error |   **Reasoning**:Code quality. |
 | unicorn/no-anonymous-default-export | off |   **Reasoning**:Arbitrary. |
 | unicorn/no-array-callback-reference | off |   **Reasoning**:Arbitrary. |
 | unicorn/no-array-for-each | off |   **Reasoning**:Problematic reasoning, forEach is more readable. |
 | unicorn/no-array-method-this-argument | off |   **Reasoning**:Arbitrary. |
-| unicorn/no-array-push-push | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/no-array-reduce | off |   **Reasoning**:Problematic reasoning, reduce is more readable. |
+| unicorn/no-array-reverse | off |   **Reasoning**:Arbitrary. |
+| unicorn/no-array-sort | off |   **Reasoning**:Arbitrary. |
 | unicorn/no-await-expression-member | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/no-await-in-promise-methods | error |   **Reasoning**:Code quality. |
 | unicorn/no-console-spaces | warn |   **Reasoning**:Readability and simplicity. |
@@ -44,13 +48,13 @@
 | unicorn/no-empty-file | warn |   **Reasoning**:Organization. |
 | unicorn/no-for-loop | off |   **Reasoning**:Arbitrary. |
 | unicorn/no-hex-escape | error |   **Reasoning**:Consistency. |
-| unicorn/no-instanceof-array | error |   **Reasoning**:Code quality. |
+| unicorn/no-instanceof-builtins | error |   **Reasoning**:Code quality. |
 | unicorn/no-invalid-fetch-options | error |   **Reasoning**:Code quality. |
 | unicorn/no-invalid-remove-event-listener | error |   **Reasoning**:Code quality. |
 | unicorn/no-keyword-prefix | off |   **Reasoning**:Arbitrary. |
-| unicorn/no-length-as-slice-end | off |   **Reasoning**:Readability and simplicity. |
 | unicorn/no-lonely-if | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/no-magic-array-flat-depth | error |   **Reasoning**:Readability and simplicity. |
+| unicorn/no-named-default | error |   **Reasoning**:Code consistency. |
 | unicorn/no-negated-condition | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/no-negation-in-equality-check | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/no-nested-ternary | error |   **Reasoning**:Code quality and readability and simplicity. |
@@ -64,11 +68,15 @@
 | unicorn/no-thenable | off |   **Reasoning**:Arbitrary. |
 | unicorn/no-this-assignment | off |   **Reasoning**:Arbitrary. |
 | unicorn/no-typeof-undefined | error |   **Reasoning**:Readability and simplicity. |
+| unicorn/no-unnecessary-array-flat-depth | error |   **Reasoning**:Simplicity and readability. |
+| unicorn/no-unnecessary-array-splice-count | error |   **Reasoning**:Simplicity and readability. |
 | unicorn/no-unnecessary-await | error |   **Reasoning**:Code quality. |
 | unicorn/no-unnecessary-polyfills | off |   **Reasoning**:Project specific. |
+| unicorn/no-unnecessary-slice-end | off |   **Reasoning**:Readability and simplicity. |
 | unicorn/no-unreadable-array-destructuring | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/no-unreadable-iife | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/no-unused-properties | warn |   **Reasoning**:Code quality. |
+| unicorn/no-useless-error-capture-stack-trace | error |   **Reasoning**:Code quality. |
 | unicorn/no-useless-fallback-in-spread | error |   **Reasoning**:Code quality. |
 | unicorn/no-useless-length-check | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/no-useless-promise-resolve-reject | off |   **Reasoning**:Covered by promise/no-return-wrap. |
@@ -85,7 +93,10 @@
 | unicorn/prefer-array-index-of | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/prefer-array-some | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/prefer-at | off |   **Reasoning**:Arbitrary. |
+| unicorn/prefer-bigint-literals | off |   **Reasoning**:Arbitrary. |
 | unicorn/prefer-blob-reading-methods | error |   **Reasoning**:Code quality. |
+| unicorn/prefer-class-fields | error |   **Reasoning**:Code quality. |
+| unicorn/prefer-classlist-toggle | error |   **Reasoning**:Code quality. |
 | unicorn/prefer-code-point | error |   **Reasoning**:Code quality. |
 | unicorn/prefer-date-now | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/prefer-default-parameters | error |   **Reasoning**:Readability and simplicity. |
@@ -96,6 +107,7 @@
 | unicorn/prefer-event-target | error |   **Reasoning**:Code quality. |
 | unicorn/prefer-export-from | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/prefer-global-this | off |   **Reasoning**:Arbitrary. |
+| unicorn/prefer-import-meta-properties | error |   **Reasoning**:Code quality. |
 | unicorn/prefer-includes | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/prefer-json-parse-buffer | error |   **Reasoning**:Code quality. |
 | unicorn/prefer-keyboard-event-key | error |   **Reasoning**:Readability and simplicity. |
@@ -117,6 +129,7 @@
 | unicorn/prefer-regexp-test | off |   **Reasoning**:Covered by regexp/prefer-regexp-test. |
 | unicorn/prefer-set-has | off |   **Reasoning**:Arbitrary. |
 | unicorn/prefer-set-size | off |   **Reasoning**:Arbitrary. |
+| unicorn/prefer-single-call | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/prefer-spread | off |   **Reasoning**:Arbitrary. |
 | unicorn/prefer-string-raw | off |   **Reasoning**:Readability and simplicity. |
 | unicorn/prefer-string-replace-all | error |   **Reasoning**:Readability and simplicity. |
@@ -131,6 +144,8 @@
 | unicorn/prevent-abbreviations | error |   **Reasoning**:Readability and simplicity. Removes ambiguity for future developers. |
 | unicorn/relative-url-style | error |   **Reasoning**:Readability and simplicity. MAintains consistent url structure to imports. |
 | unicorn/require-array-join-separator | error |   **Reasoning**:Readability and simplicity. |
+| unicorn/require-module-attributes | error |   **Reasoning**:Code quality. |
+| unicorn/require-module-specifiers | error |   **Reasoning**:Code quality. |
 | unicorn/require-number-to-fixed-digits-argument | error |   **Reasoning**:Readability and simplicity. |
 | unicorn/require-post-message-target-origin | error |   **Reasoning**:Code quality. |
 | unicorn/string-content | off |   **Reasoning**:Arbitrary. |

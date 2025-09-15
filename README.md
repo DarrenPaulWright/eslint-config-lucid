@@ -12,7 +12,7 @@ Lucid only supports the new flat config that shipped with ESLint v8.21.0
 
 ## Installation
 First install peer dependencies:
-- [eslint](https://www.npmjs.com/package/eslint) 8.x
+- [eslint](https://www.npmjs.com/package/eslint) 9.x
 ```
 npm i eslint 
 ```
@@ -21,6 +21,24 @@ Next, install eslint-config-lucid:
 npm i eslint-config-lucid
 ```
 Add Lucid to your eslint.config.js configuration file.
+
+```javascript
+import lucid, { lucidBrowser } from 'eslint-config-lucid';
+
+export default [
+	...lucid,
+	lucidBrowser,
+	// ... other rule sets.
+];
+
+// Or for node
+import { lucidNode } from 'eslint-config-lucid';
+
+export default [
+	...lucidNode,
+	// ... other rule sets.
+];
+```
 
 <br><a name="About"></a>
 
@@ -54,7 +72,7 @@ include researched psychological principals in your issue or pull request.
 
 <dl>
 <dt><a href="docs/babel.md">babel</a> : <code>object</code></dt>
-<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-babel">eslint-plugin-babel</a>. Each rule corresponds to a core eslint rule, and has the same options. These allow modern ES features without throwing false errors.</p>
+<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/@babel/eslint-plugin">@babel/eslint-plugin</a>. Each rule corresponds to a core eslint rule, and has the same options. These allow modern ES features without throwing false errors.</p>
 </dd>
 <dt><a href="docs/core.md">core</a> : <code>object</code></dt>
 <dd><p>Core ESLint rules.</p>
@@ -77,11 +95,8 @@ include researched psychological principals in your issue or pull request.
 <dt><a href="docs/security.md">security</a> : <code>object</code></dt>
 <dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-security">eslint-plugin-security</a>.</p>
 </dd>
-<dt><a href="docs/@stylistic/js.md">@stylistic/js</a> : <code>object</code></dt>
-<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/@stylistic/eslint-plugin-js">@stylistic/eslint-plugin-js</a>.</p>
-</dd>
-<dt><a href="docs/@stylistic/plus.md">@stylistic/plus</a> : <code>object</code></dt>
-<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/@stylistic/eslint-plugin-plus">@stylistic/eslint-plugin-plus</a>.</p>
+<dt><a href="docs/@stylistic.md">@stylistic</a> : <code>object</code></dt>
+<dd><p>ESLint rules for <a href="https://www.npmjs.com/package/@stylistic/eslint-plugin">@stylistic/eslint-plugin</a>.</p>
 </dd>
 <dt><a href="docs/unicorn.md">unicorn</a> : <code>object</code></dt>
 <dd><p>ESLint rules for <a href="https://www.npmjs.com/package/eslint-plugin-unicorn">eslint-plugin-unicorn</a>.</p>

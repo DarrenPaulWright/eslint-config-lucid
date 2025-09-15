@@ -29,5 +29,6 @@
 | promise/param-names | error |   **Reasoning**:Readability and simplicity. |
 | promise/prefer-await-to-callbacks | off |   **Reasoning**:Arbitrary. |
 | promise/prefer-await-to-then | off |   **Reasoning**:Arbitrary. |
+| promise/prefer-catch | error |   **Reasoning**:Readability and simplicity. |
 | promise/valid-params | error |   **Reasoning**:Code quality. |
 | promise/spec-only | error |   **Reasoning**:Code quality. |

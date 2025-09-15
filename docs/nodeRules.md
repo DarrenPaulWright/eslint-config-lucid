@@ -36,6 +36,7 @@
 | node/no-restricted-import | off |   **Reasoning**:Project specific. |
 | node/no-restricted-require | off |   **Reasoning**:Project specific. |
 | node/no-sync | error |   **Reasoning**:Performance. |
+| node/no-top-level-await | error |   **Reasoning**:Performance. |
 | node/no-unpublished-bin | error |   **Reasoning**:Code quality. |
 | node/no-unpublished-import | off |   **Reasoning**:False positives. |
 | node/no-unpublished-require | off |   **Reasoning**:False positives. |
