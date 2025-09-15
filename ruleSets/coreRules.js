@@ -267,15 +267,6 @@ export default {
 		'init-declarations': 'warn',
 
 		/**
-		 * Enforce position of line comments
-		 * @see {@link https://eslint.org/docs/rules/line-comment-position}
-		 *
-		 * @property line-comment-position=off - Arbitrary.
-		 * @memberOf core
-		 **/
-		'line-comment-position': 'off',
-
-		/**
 		 * Require or disallow logical assignment logical operator shorthand
 		 * @see {@link https://eslint.org/docs/rules/logical-assignment-operators}
 		 *
@@ -352,15 +343,6 @@ export default {
 		 * @memberOf core
 		 **/
 		'max-statements': 'off',
-
-		/**
-		 * Enforce a particular style for multiline comments
-		 * @see {@link https://eslint.org/docs/rules/multiline-comment-style}
-		 *
-		 * @property multiline-comment-style=off - Covered by jsdoc.
-		 * @memberOf core
-		 **/
-		'multiline-comment-style': 'off',
 
 		/**
 		 * Require constructor names to begin with a capital letter
@@ -980,15 +962,6 @@ export default {
 		'no-new-native-nonconstructor': 'off',
 
 		/**
-		 * Disallow `new` operators with the `Symbol` object
-		 * @see {@link https://eslint.org/docs/rules/no-new-symbol}
-		 *
-		 * @property no-new-symbol=off - Covered by unicorn/new-for-builtins.
-		 * @memberOf core
-		 **/
-		'no-new-symbol': 'off',
-
-		/**
 		 * Disallow `new` operators with the `String`, `Number`, and `Boolean` objects
 		 * @see {@link https://eslint.org/docs/rules/no-new-wrappers}
 		 *
@@ -1268,6 +1241,15 @@ export default {
 		'no-throw-literal': 'error',
 
 		/**
+		 * Disallow `let` or `var` variables that are read but never assigned.
+		 * @see {@link https://eslint.org/docs/latest/rules/no-unassigned-vars}
+		 *
+		 * @property no-unassigned-vars=error - Code quality.
+		 * @memberOf core
+		 **/
+		'no-unassigned-vars': 'error',
+
+		/**
 		 * Disallow the use of undeclared variables unless mentioned in global comments
 		 * @see {@link https://eslint.org/docs/rules/no-undef}
 		 *
@@ -1419,6 +1401,15 @@ export default {
 		 * @memberOf core
 		 **/
 		'no-use-before-define': 'error',
+
+		/**
+		 * Disallow variable assignments when the value is not used.
+		 * @see {@link https://eslint.org/docs/latest/rules/no-useless-assignment}
+		 *
+		 * @property no-useless-assignment=error - Code quality.
+		 * @memberOf core
+		 **/
+		'no-useless-assignment': 'error',
 
 		/**
 		 * Disallow useless backreferences in regular expressions
@@ -1680,6 +1671,15 @@ export default {
 		 * @memberOf core
 		 **/
 		'prefer-template': 'error',
+
+		/**
+		 * Disallow losing originally caught error when re-throwing custom errors.
+		 * @see {@link https://eslint.org/docs/latest/rules/preserve-caught-error}
+		 *
+		 * @property preserve-caught-error=error - Readability and simplicity.
+		 * @memberOf core
+		 **/
+		'preserve-caught-error': 'error',
 
 		/**
 		 * Enforce the consistent use of the radix argument when using `parseInt()`

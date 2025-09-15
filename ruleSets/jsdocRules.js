@@ -36,6 +36,10 @@ export default {
 		 * @property jsdoc/check-access=off - Prefer the use of @public, @private, @protected, or @package. Accordingly, @access tags are prohibited.
 		 * @memberOf jsdoc
 		 **/
+		/**
+		 * @property jsdoc/check-access=off - Arbitrary.
+		 * @memberOf jsdoc
+		 **/
 		'jsdoc/check-access': 'off',
 
 		/**
@@ -292,6 +296,12 @@ export default {
 		],
 
 		/**
+		 * @property jsdoc/require-next-type=error - Code quality.
+		 * @memberOf jsdoc
+		 **/
+		'jsdoc/require-next-type': 'error',
+
+		/**
 		 * @property jsdoc/require-param=error - Code quality.
 		 * @memberOf jsdoc
 		 **/
@@ -376,10 +386,22 @@ export default {
 		'jsdoc/require-throws': 'error',
 
 		/**
+		 * @property jsdoc/require-throws-type=error - Code quality.
+		 * @memberOf jsdoc
+		 **/
+		'jsdoc/require-throws-type': 'error',
+
+		/**
 		 * @property jsdoc/require-yields=error - Code quality.
 		 * @memberOf jsdoc
 		 **/
 		'jsdoc/require-yields': 'error',
+
+		/**
+		 * @property jsdoc/require-yields-type=error - Code quality.
+		 * @memberOf jsdoc
+		 **/
+		'jsdoc/require-yields-type': 'error',
 
 		/**
 		 * @property jsdoc/require-yields-check=error - Code quality.
@@ -404,6 +426,12 @@ export default {
 		 * @memberOf jsdoc
 		 **/
 		'jsdoc/text-escaping': 'off',
+
+		/**
+		 * @property jsdoc/type-formatting=error - Readability.
+		 * @memberOf jsdoc
+		 **/
+		'jsdoc/type-formatting': ['error', { arrayBrackets: 'angle' }],
 
 		/**
 		 * @property jsdoc/valid-types=error

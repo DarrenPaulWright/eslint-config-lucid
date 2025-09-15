@@ -110,6 +110,12 @@ export default {
 		'promise/prefer-await-to-then': 'off',
 
 		/**
+		 * @property promise/prefer-catch=error - Readability and simplicity.
+		 * @memberOf promise
+		 **/
+		'promise/prefer-catch': 'error',
+
+		/**
 		 * @property promise/valid-params=error - Code quality.
 		 * @memberOf promise
 		 **/

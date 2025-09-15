@@ -156,6 +156,12 @@ const nodeRules = {
 		'node/no-sync': 'error',
 
 		/**
+		 * @property node/node/no-top-level-await=error - Performance.
+		 * @memberOf node
+		 **/
+		'node/no-top-level-await': 'error',
+
+		/**
 		 * @property node/no-unpublished-bin=error - Code quality.
 		 * @memberOf node
 		 **/

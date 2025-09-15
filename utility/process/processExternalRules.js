@@ -14,6 +14,29 @@ const buildDeprecationMessage = (meta) => {
 	return output;
 };
 
+const buildDescription = (value, isComments) => {
+	let description = value.meta?.docs?.description || '';
+
+	if (value.meta?.docs?.url) {
+		if (isComments) {
+			if (description) {
+				description += '\n';
+			}
+
+			description += `@see {@link ${ value.meta?.docs?.url }}`;
+		}
+		else {
+			if (description) {
+				description += NEWLINE;
+			}
+
+			description += value.meta?.docs?.url;
+		}
+	}
+
+	return description;
+};
+
 const processExternalRules = (externalRules, name, isComments) => {
 	const rules = {};
 	const descriptions = {};
@@ -25,24 +48,7 @@ const processExternalRules = (externalRules, name, isComments) => {
 			deprecated[nameBase + rule] = buildDeprecationMessage(value.meta);
 		}
 		else {
-			descriptions[rule] = value.meta?.docs?.description || '';
-
-			if (value.meta?.docs?.url) {
-				if (isComments) {
-					if (descriptions[rule]) {
-						descriptions[rule] += '\n';
-					}
-
-					descriptions[rule] += `@see {@link ${ value.meta?.docs?.url }}`;
-				}
-				else {
-					if (descriptions[rule]) {
-						descriptions[rule] += NEWLINE;
-					}
-
-					descriptions[rule] += value.meta?.docs?.url;
-				}
-			}
+			descriptions[rule] = buildDescription(value, isComments);
 
 			rules[nameBase + rule] = value.meta?.docs?.recommended ?
 				'error' :

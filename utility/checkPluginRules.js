@@ -1,6 +1,5 @@
 import chalk from 'chalk';
 import { join } from 'node:path';
-import { fileURLToPath } from 'node:url';
 import cleanRules from './clean/cleanRules.js';
 import printMain from './output/printMain.js';
 import printResults from './output/printResults.js';
@@ -14,7 +13,7 @@ import ruleLabel from './process/ruleLabel.js';
 import lucid, { lucidNode } from '../index.js';
 
 const argv = process.argv;
-const __dirname = fileURLToPath(new URL('.', import.meta.url));
+const __dirname = import.meta.dirname;
 const isTest = argv.includes('--test');
 const isComments = argv.includes('--comments');
 const commentsData = {};

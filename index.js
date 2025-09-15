@@ -11,8 +11,7 @@ import preferArrowFunctionsRules from './ruleSets/preferArrowFunctionsRules.js';
 import promiseRules from './ruleSets/promiseRules.js';
 import regexpRules from './ruleSets/regexpRules.js';
 import securityRules from './ruleSets/securityRules.js';
-import stylisticJsRules from './ruleSets/stylisticJsRules.js';
-import stylisticPlusRules from './ruleSets/stylisticPlusRules.js';
+import stylisticRules from './ruleSets/stylisticRules.js';
 import unicornRules from './ruleSets/unicornRules.js';
 
 /**
@@ -85,8 +84,7 @@ const lucid = [
 		}
 	},
 	coreRules,
-	stylisticJsRules,
-	stylisticPlusRules,
+	stylisticRules,
 	promiseRules,
 	regexpRules,
 	unicornRules,
